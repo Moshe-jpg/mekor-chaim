@@ -10,7 +10,7 @@ const Header = () => {
       <ul className="links-container">
         <li className="nav-links"><a href="#about">About</a></li>
         <li className="nav-links"><a href="#contact">Contact</a></li>
-        <li className="nav-links"><a href="/donate">Donate</a></li>
+        <li className="nav-links donate-link"><a href="/donate">Donate</a></li>
       </ul>
     </header>
     )
