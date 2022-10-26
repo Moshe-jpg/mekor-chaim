@@ -14,6 +14,7 @@ import purimSeudaImg from "../../assets/purim-seuda.webp";
 import shabbatonImg from "../../assets/shabbaton.webp";
 import softballImg from "../../assets/softball-game.webp";
 import zoomImg from "../../assets/zoom-seder.webp";
+import founderImg from "../../assets/founder.webp";
 
 const About = () => {
   let bSize = {
@@ -34,24 +35,14 @@ const About = () => {
 
   const [activities] = useState([
     {
-      img: bbqImg,
-      alt: "barbecue",
-      caption: "BBQ",
-    },
-    {
-      img: bowlingImg,
-      alt: "Bowling",
-      caption: "Bowling",
-    },
-    {
       img: bkVaadImg,
       alt: "Brooklyn Vaad",
       caption: "Brooklyn Vaad",
     },
     {
-      img: escapeImg,
-      alt: "Escape Room",
-      caption: "Escape Room",
+      img: bbqImg,
+      alt: "barbecue",
+      caption: "BBQ",
     },
     {
       img: fiveTcImg,
@@ -59,10 +50,21 @@ const About = () => {
       caption: "Five Towns Chaburah",
     },
     {
+      img: bowlingImg,
+      alt: "Bowling",
+      caption: "Bowling",
+    },
+    {
       img: lsImg,
       alt: "Learning Seder",
       caption: "Learning Seder",
     },
+    {
+      img: escapeImg,
+      alt: "Escape Room",
+      caption: "Escape Room",
+    },
+
     {
       img: simchaImg,
       alt: "Mekor Chaim Simcha",
@@ -127,12 +129,24 @@ const About = () => {
           <span>What We Offer</span>
         </h2>
         <ul>
-          <li><span>Relatable Rebbeim</span>✔</li>
-          <li><span>Social Events</span>✔</li>
-          <li><span>In-Shabbosim</span>✔</li>
-          <li><span>Yuntif Retreats</span>✔</li>
-          <li><span>Career Assistance</span>✔</li>
-          <li><span>Shidduch Initiative</span>✔</li>
+          <li>
+            <span>Relatable Rebbeim</span>✔
+          </li>
+          <li>
+            <span>Social Events</span>✔
+          </li>
+          <li>
+            <span>In-Shabbosim</span>✔
+          </li>
+          <li>
+            <span>Yuntif Retreats</span>✔
+          </li>
+          <li>
+            <span>Career Assistance</span>✔
+          </li>
+          <li>
+            <span>Shidduch Initiative</span>✔
+          </li>
         </ul>
         <article className="what-we-offer">
           <Carousel fade>
@@ -158,13 +172,50 @@ const About = () => {
           </Carousel>
         </article>
         <ul>
-          <li><span>​Like-Minded Community</span>✔​</li>
-          <li><span>Zoom Shiurim</span>✔</li>
-          <li><span>Chavrusos 24/7</span>✔</li>
-          <li><span>Traveling Chaburos</span>✔</li>
-          <li><span>Hashkafa/Parsha Vaadim</span>✔</li>
-          <li><span>Shiurim Throughout The Day</span>✔</li>
+          <li>
+            <span>​Like-Minded Community</span>✔​
+          </li>
+          <li>
+            <span>Zoom Shiurim</span>✔
+          </li>
+          <li>
+            <span>Chavrusos 24/7</span>✔
+          </li>
+          <li>
+            <span>Traveling Chaburos</span>✔
+          </li>
+          <li>
+            <span>Hashkafa/Parsha Vaadim</span>✔
+          </li>
+          <li>
+            <span>Shiurim Throughout The Day</span>✔
+          </li>
         </ul>
+      </section>
+      <section id="founder">
+        <div className="founder-card">
+          <div className="founder-info">
+            <h2>
+              <span className="blue">Rabbi Dov Blumberg</span>
+              <br></br>
+              <br></br>
+              <span className="orange">Founder</span>
+            </h2>
+            <p className="founder-desc">
+              Under the tutelage of its Rosh haYeshiva, haRav Shaya Cohen,
+              shlit”a, Rabbi Blumberg spent over a decade learning and carefully
+              absorbing the hashkafa of his rebbeim in Yeshiva Zichon Aryeh.
+              Towards the end of his years in Beis Medrash, he participated in
+              Rav Cohen’s comprehensive teacher-training course. in 2018, Rabbi
+              Blumberg founded Mekor Chaim. Rabbi Blumberg has a strong
+              connection to ‘his guys’ and is providing them with a solid
+              foundation to succeed in life as a ben Torah in the workforce.
+            </p>
+          </div>
+          <div className="founder-pic">
+            <img src={founderImg} alt="Rabbi Dov Blumberg" />
+          </div>
+        </div>
       </section>
     </>
   );
