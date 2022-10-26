@@ -198,18 +198,17 @@ const About = () => {
             <h2>
               <span className="blue">Rabbi Dov Blumberg</span>
               <br></br>
-              <br></br>
               <span className="orange">Founder</span>
             </h2>
             <p className="founder-desc">
-              Under the tutelage of its Rosh haYeshiva, haRav Shaya Cohen,
-              shlit”a, Rabbi Blumberg spent over a decade learning and carefully
-              absorbing the hashkafa of his rebbeim in Yeshiva Zichon Aryeh.
+              Under the tutelage of its Rosh HaYeshiva, HaRav Shaya Cohen,
+              Shlit”a, Rabbi Blumberg spent over a decade learning and carefully
+              absorbing the hashkafa of his Rebbeim in Yeshiva Zichon Aryeh.
               Towards the end of his years in Beis Medrash, he participated in
-              Rav Cohen’s comprehensive teacher-training course. in 2018, Rabbi
+              Rav Cohen’s comprehensive teacher-training course. In 2018, Rabbi
               Blumberg founded Mekor Chaim. Rabbi Blumberg has a strong
-              connection to ‘his guys’ and is providing them with a solid
-              foundation to succeed in life as a ben Torah in the workforce.
+              connection to ‘his guys’ and provides them with a solid
+              foundation to succeed in life as a Ben Torah in the workforce.
             </p>
           </div>
           <div className="founder-pic">
