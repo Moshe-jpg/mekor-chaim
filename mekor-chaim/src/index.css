@@ -46,7 +46,7 @@ header ul {
 }
 
 header ul li {
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 header ul li a {
@@ -59,9 +59,14 @@ header ul li a {
   background: #dc5f00;
   padding: 5px 10px;
   border-radius: 25px;
+  margin-right: 10px;
 }
 
 /* landing section */
+
+#landingSection {
+  background-color: #1b2430;
+}
 
 .overlay {
   height: 100%;
@@ -95,49 +100,147 @@ video {
   letter-spacing: 1.25px;
 }
 
-/* About section */
+/* About section | who we are */
 
 #about {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #354259;
+  padding: 0 5%;
+  background-color: #1b2430;
 }
 
-.about-content {
+.who-we-are {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/assets/who-we-are-img.webp");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.who-we-are h2 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  position: absolute;
+  top: 115vh;
+}
+
+.who-we-are h2 span {
+  background-color: #dc5f00;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.who-we-are p {
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-size: 20px;
+  position: absolute;
+  top: 170vh;
+  padding: 3% 12%;
+  text-align: center;
+}
+
+/* About section | what we offer */
+
+#offers {
+  min-height: 100vh;
+  background: #1b2430;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.about-content h2 {
-  font-size: 3.5rem;
+#offers h2 {
+  size: 3.5rem;
   color: #ffffff;
-  align-self: flex-start;
+  position: absolute;
+  top: 208vh;
 }
-
-.about-content p {
-  color: #ffffff;
-  font-size: 22px;
-  align-self: flex-end;
-}
-
-.about-content h2 span {
+#offers h2 span {
   background-color: #dc5f00;
-  padding: 5px 15px;
   border-radius: 25px;
+  padding: 10px 15px;
 }
 
-.who-we-are-text,
-.who-we-are-img {
+#offers ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   width: 50%;
   text-align: center;
-  padding: 0 20px;
 }
 
-.who-we-are-img img {
+#offers ul li {
+  list-style: none;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+#offers ul li span {
+  background: #dc5f00;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.what-we-offer {
+  width: 45%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.carousel {
+  min-height: 60vh;
+  top: 120px;
+}
+
+.carousel-fade .carousel-item.active {
+  width: 400px;
+  height: 400px;
+}
+
+.carousel-item .d-block {
   width: 100%;
   height: 100%;
+}
+
+.carousel-control-next span {
+  position: relative;
+  left: 55px;
+}
+
+.carousel-control-prev span {
+  position: relative;
+  right: 55px;
+}
+
+.carousel-caption h3 {
+  position: relative;
+  bottom: 0;
+}
+
+.carousel-indicators button {
+  display: none;
+}
+
+.carousel-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
 }
