@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import mapLogo from "../../assets/google-maps.png";
+import gmailLogo from "../../assets/gmail.png";
+import PhoneLogo from "../../assets/phone.png";
+import linkedInLogo from "../../assets/linkedin.png";
+import spotifyLogo from "../../assets/spotify.png";
 
 emailjs.init("iwUP8eH1NlcSvoxkb");
 
@@ -75,6 +79,12 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <ul className="contact-links">
+        <li id="gmail"><a href="mailto:dblumberg@mekorchaim.com"><img src={gmailLogo} alt="gmail Mekor Chaim"></img></a></li>
+        <li id="phone"><a href="tel:5168874257"><img src={PhoneLogo} alt="call phone"></img></a></li>
+        <li><a href="http://www.linkedin.com/in/dovblumberg/"><img src={linkedInLogo} alt="Mekor Chaim LinkedIn"></img></a></li>
+        <li><a href="https://open.spotify.com/show/39fPnP576LNs6wSP186XOB?si=PEpL8fcTQKO4Gl1H79t54A&utm_source=native-share-menu"><img src={spotifyLogo} alt="Mekor Chaim Podcast"></img></a></li>
+      </ul>
     </section>
   );
 };

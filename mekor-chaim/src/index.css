@@ -7,6 +7,15 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-dark: #1b2430;
+  --secondary-dark: #dc5f00;
+  --tertiary-dark: #ffffff;
+  --primary-light: #ffffff;
+  --secondary-light: #224B0C;
+  --tertiary-light: #000000;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Oswald", sans-serif;
@@ -60,7 +69,7 @@ header ul li {
 }
 
 header ul li a {
-  color: #ffffff;
+  color: var(--tertiary-dark);
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 1px;
@@ -68,7 +77,7 @@ header ul li a {
 }
 
 .donate-link {
-  background: #dc5f00;
+  background: var(--secondary-dark);
   padding: 5px 10px;
   border-radius: 25px;
   margin-right: 10px;
@@ -77,7 +86,7 @@ header ul li a {
 /* landing section */
 
 #landingSection {
-  background-color: #1b2430;
+  background-color: var(--primary-dark);
 }
 
 .overlay {
@@ -104,7 +113,7 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--tertiary-dark);
   font-family: "Bitter", serif;
 }
 
@@ -121,7 +130,7 @@ video {
 
 #about {
   padding: 10vh 5vw;
-  background-color: #1b2430;
+  background-color: var(--primary-dark);
 }
 
 .who-we-are {
@@ -139,20 +148,20 @@ video {
 
 .who-we-are h2 {
   font-size: 3.5rem;
-  color: #ffffff;
+  color: var(--tertiary-dark);
   position: absolute;
   top: 120vh;
 }
 
 .who-we-are h2 span {
-  background-color: #dc5f00;
+  background-color: var(--secondary-dark);
   border-radius: 25px;
   padding: 10px 15px;
   font-family: "Bitter", serif;
 }
 
 .who-we-are p {
-  color: #ffffff;
+  color: var(--tertiary-dark);
   line-height: 1.2;
   letter-spacing: 1px;
   font-size: 20px;
@@ -168,8 +177,8 @@ video {
 
 #offers {
   min-height: 100vh;
-  background: #1b2430;
-  color: #ffffff;
+  background: var(--primary-dark);
+  color: var(--tertiary-dark);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,12 +187,12 @@ video {
 
 #offers h2 {
   size: 3.5rem;
-  color: #ffffff;
+  color: var(--tertiary-dark);
   position: absolute;
   top: 228vh;
 }
 #offers h2 span {
-  background-color: #dc5f00;
+  background-color: var(--secondary-dark);
   border-radius: 25px;
   padding: 10px 15px;
   font-family: "Bitter", serif;
@@ -210,12 +219,12 @@ video {
 }
 
 #offers ul li span {
-  background: #dc5f00;
-  color: #ffffff;
+  background: var(--secondary-dark);
+  color: var(--tertiary-dark);
   border-radius: 25px;
   padding: 5px 10px;
   letter-spacing: 1.5px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Bitter", serif;
 }
 
 .what-we-offer {
@@ -254,6 +263,8 @@ video {
 .carousel-caption h3 {
   position: relative;
   bottom: 0;
+  font-family: "Bitter", serif;
+  color: var(--tertiary-dark);
 }
 
 .carousel-indicators button {
@@ -277,7 +288,7 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #dc5f00;
+  background: var(--secondary-dark);
 }
 
 #founder .founder-card {
@@ -285,7 +296,7 @@ video {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: var(--tertiary-dark);
   color: #000000;
   width: 80vw;
   height: 70vh;
@@ -306,11 +317,11 @@ video {
 }
 
 .blue {
-  color: #1b2430;
+  color: var(--primary-dark);
 }
 
 .orange {
-  color: #dc5f00;
+  color: var(--secondary-dark);
 }
 
 #founder .founder-card .founder-desc {
@@ -331,8 +342,9 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #1b2430;
-  color: #ffffff;
+  background: var(--primary-dark);
+  color: var(--tertiary-dark);
+  font-family: "Bitter", serif;
 }
 
 #contact h2 {
@@ -358,8 +370,8 @@ video {
 }
 
 .locations-container li span {
-  background: #dc5f00;
-  color: #ffffff;
+  background: var(--secondary-dark);
+  color: var(--tertiary-dark);
   padding: 10px 15px;
   border-radius: 25px;
   font-size: 22px;
@@ -367,7 +379,7 @@ video {
 }
 
 .locations-container li a {
-  color: #ffffff;
+  color: var(--tertiary-dark);
   text-decoration: none;
   font-size: 35px;
 }
@@ -376,7 +388,8 @@ video {
   width: 45px;
 }
 
-.locations-container, .contact-form {
+.locations-container,
+.contact-form {
   width: 40%;
 }
 
@@ -390,8 +403,8 @@ video {
 
 .contact-form .contact-header span {
   font-size: 35px;
-  background-color: #ffffff;
-  color: #dc5f00;
+  background-color: var(--tertiary-dark);
+  color: var(--secondary-dark);
   border-radius: 25px;
   padding: 10px 15px;
 }
@@ -410,11 +423,11 @@ input {
 .inputBox input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ffffff;
-  background: #dc5f00;
+  border: 1px solid var(--tertiary-dark);
+  background: var(--secondary-dark);
   border-radius: 5px;
   outline: none;
-  color: #ffffff;
+  color: var(--tertiary-dark);
   font-size: 1em;
   transition: 0.5s ease-in-out;
 }
@@ -431,11 +444,11 @@ input {
 }
 
 .inputBox input:focus ~ span {
-  color: #dc5f00;
+  color: var(--secondary-dark);
   transform: translateX(30px) translateY(-7px);
   font-size: 0.65em;
   padding: 0 10px;
-  background: #ffffff;
+  background: var(--tertiary-dark);
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
   letter-spacing: 0.2em;
@@ -462,12 +475,12 @@ input {
 
 .inputBoxBtn {
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--tertiary-dark);
   border: 0;
   width: 8rem;
   height: 2.25rem;
   padding: 1%;
-  color: #dc5f00;
+  color: var(--secondary-dark);
   font-weight: bold;
   transition: 0.5s ease-in-out;
   border-radius: 5px;
@@ -481,3 +494,37 @@ input {
 }
 
 /*  */
+
+.contact-links {
+  position: absolute;
+  top: 530vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.contact-links li {
+  list-style: none;
+  margin: 0 5%;
+}
+
+#gmail {
+  background: var(--tertiary-dark);
+  border-radius: 20%;
+}
+
+#phone {
+  background: brown;
+  border-radius: 20%;
+}
+
+.contact-links li a {
+  text-decoration: none;
+}
+
+.contact-links li a img {
+  width: 50px;
+}
