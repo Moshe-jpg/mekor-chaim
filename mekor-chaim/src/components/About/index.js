@@ -130,22 +130,22 @@ const About = () => {
         </h2>
         <ul>
           <li>
-            <span>Relatable Rebbeim</span>✔
+            <span className="offers-item">Relatable Rebbeim</span>✔
           </li>
           <li>
-            <span>Social Events</span>✔
+            <span className="offers-item">Social Events</span>✔
           </li>
           <li>
-            <span>In-Shabbosim</span>✔
+            <span className="offers-item">In-Shabbosim</span>✔
           </li>
           <li>
-            <span>Yuntif Retreats</span>✔
+            <span className="offers-item">Yuntif Retreats</span>✔
           </li>
           <li>
-            <span>Career Assistance</span>✔
+            <span className="offers-item">Career Assistance</span>✔
           </li>
           <li>
-            <span>Shidduch Initiative</span>✔
+            <span className="offers-item">Shidduch Initiative</span>✔
           </li>
         </ul>
         <article className="what-we-offer">
@@ -173,22 +173,22 @@ const About = () => {
         </article>
         <ul>
           <li>
-            <span>​Like-Minded Community</span>✔​
+            <span className="offers-item">​Like-Minded Community</span>✔​
           </li>
           <li>
-            <span>Zoom Shiurim</span>✔
+            <span className="offers-item">Zoom Shiurim</span>✔
           </li>
           <li>
-            <span>Chavrusos 24/7</span>✔
+            <span className="offers-item">Chavrusos 24/7</span>✔
           </li>
           <li>
-            <span>Traveling Chaburos</span>✔
+            <span className="offers-item">Traveling Chaburos</span>✔
           </li>
           <li>
-            <span>Hashkafa/Parsha Vaadim</span>✔
+            <span className="offers-item">Hashkafa/Parsha Vaadim</span>✔
           </li>
           <li>
-            <span>Shiurim Throughout The Day</span>✔
+            <span className="offers-item">Shiurim Throughout The Day</span>✔
           </li>
         </ul>
       </section>

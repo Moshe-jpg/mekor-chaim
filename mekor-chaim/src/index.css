@@ -12,7 +12,7 @@
   --secondary-dark: #dc5f00;
   --tertiary-dark: #ffffff;
   --primary-light: #ffffff;
-  --secondary-light: #224B0C;
+  --secondary-light: #224b0c;
   --tertiary-light: #000000;
 }
 
@@ -56,31 +56,70 @@ header .brand-logo {
   padding-left: 5%;
 }
 
-header ul {
+header .color-way {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 5% 0 0;
+}
+
+header .color-way li {
+  list-style: none;
+}
+
+header .color-way li div {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  list-style: none;
+}
+
+header .color-way .light-mode {
+  background: linear-gradient(
+    to left,
+    var(--primary-light) 50%,
+    var(--secondary-light) 50%
+  );
+}
+
+header .color-way .dark-mode {
+  background: linear-gradient(
+    to left,
+    var(--primary-dark) 50%,
+    var(--secondary-dark) 50%
+  );
+}
+
+header .links-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
   padding-right: 5%;
+  margin: 0;
 }
 
-header ul li {
+header .links-container li {
   padding: 0 10px;
 }
 
-header ul li a {
+header .links-container li a {
   color: var(--tertiary-dark);
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
+  font-size: 1rem;
 }
 
-.donate-link {
+.donate-link #donate {
   background: var(--secondary-dark);
   padding: 5px 10px;
   border-radius: 25px;
   margin-right: 10px;
+  font-size: 1.5rem;
 }
 
 /* landing section */
