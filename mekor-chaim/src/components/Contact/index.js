@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import mapLogo from "../../assets/google-maps.png";
+
 emailjs.init("iwUP8eH1NlcSvoxkb");
 
 const Contact = () => {
@@ -39,17 +41,14 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h2>
-        <span>Where You Can Find Us</span>
-      </h2>
       <ul className="locations-container">
-        <li>Brooklyn <a href="https://goo.gl/maps/2jA22C9UDbMrtDeR8">1912 New York Ave.</a></li>
-        <li>Cedarhurst <a href="https://goo.gl/maps/FENmfRaTYEhBGrqG8">545 Arbuckle Ave.</a></li>
-        <li>Queens <a href="https://goo.gl/maps/SK2z2MVHB7ekp6J29">141-56 73rd Ave.</a></li>
+        <li><span className="city">Brooklyn</span><a href="https://goo.gl/maps/2jA22C9UDbMrtDeR8">1912 New York Ave. <img src={mapLogo} alt="google maps"></img></a></li>
+        <li><span className="city">Cedarhurst</span><a href="https://goo.gl/maps/FENmfRaTYEhBGrqG8">545 Arbuckle Ave. <img src={mapLogo} alt="google maps"></img></a></li>
+        <li><span className="city">Queens</span><a href="https://goo.gl/maps/SK2z2MVHB7ekp6J29">141-56 73rd Ave. <img src={mapLogo} alt="google maps"></img></a></li>
       </ul>
       <div className="contact-form">
         <h4 className="contact-header" id="contact-header">
-          Contact me
+          <span>Contact</span>
         </h4>
         <form ref={form} onSubmit={sendEmail}>
           <div className="inputBox">
