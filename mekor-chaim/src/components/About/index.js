@@ -128,7 +128,7 @@ const About = () => {
         <h2>
           <span>What We Offer</span>
         </h2>
-        <ul>
+        <ul id="offer-container-1">
           <li>
             <span className="offers-item">Relatable Rebbeim</span>✔
           </li>
@@ -171,7 +171,7 @@ const About = () => {
             ))}
           </Carousel>
         </article>
-        <ul>
+        <ul id="offer-container-2">
           <li>
             <span className="offers-item">​Like-Minded Community</span>✔​
           </li>

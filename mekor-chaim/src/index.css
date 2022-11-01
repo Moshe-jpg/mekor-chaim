@@ -615,13 +615,16 @@ input {
 }
 
 @media screen and (max-width: 500px) {
-
   video {
     object-fit: contain;
   }
 
   .overlay {
     display: none;
+  }
+
+  .landing-content h1, .landing-content p {
+    color: var(--tertiary-light);
   }
 
   .landing-content h1 {
@@ -636,6 +639,7 @@ input {
 
   #offers {
     flex-direction: column;
+    padding-bottom: 33px;
   }
 
   #offers h2 {
@@ -643,6 +647,14 @@ input {
   }
   #offers ul {
     width: 100%;
+  }
+
+  #offers #offer-container-1 {
+    margin: 2rem 0;
+
+  }
+
+  #offers #offer-container-2 {
     margin-top: 2rem;
   }
 
@@ -663,9 +675,10 @@ input {
     top: 0;
   }
 
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    display: none;
+  .carousel-control-next span,
+  .carousel-control-prev span {
+    left: 0;
+    right: 0;
   }
 
   #founder .founder-card {
@@ -675,12 +688,49 @@ input {
     width: 95vw;
   }
 
-  #founder .founder-card h2, #founder .founder-card .founder-desc {
+  #founder .founder-card h2,
+  #founder .founder-card .founder-desc {
     margin: 0;
     text-align: center;
   }
 
+  #founder .founder-card .founder-desc {
+    position: relative;
+    top: 20rem;
+  }
+
+  .founder-pic {
+    position: relative;
+    bottom: 13.5rem;
+  }
+
   .founder-pic img {
     border-radius: 0;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  .locations-container,
+  .contact-form {
+    width: 90%;
+    text-align: center;
+  }
+
+  .locations-container li span {
+    display: block;
+    position: relative;
+    left: 35%;
+    width: 9rem;
+  }
+
+  .contact-form {
+    margin: 5rem 0 8.5rem;
+  }
+
+  .contact-links {
+    top: 660vh;
+    width: 100%;
   }
 }
