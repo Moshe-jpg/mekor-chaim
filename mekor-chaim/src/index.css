@@ -56,6 +56,15 @@ header .brand-logo {
   padding-left: 5%;
 }
 
+header .brand-logo img {
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+header .brand-logo img:hover {
+  opacity: 1;
+}
+
 header .color-way {
   display: flex;
   flex-direction: row;
@@ -67,6 +76,11 @@ header .color-way {
 
 header .color-way li {
   list-style: none;
+  transition: 0.5s ease-in-out;
+}
+
+header .color-way li:hover {
+  transform: rotate(360deg);
 }
 
 header .color-way li div {
@@ -112,6 +126,11 @@ header .links-container li a {
   letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+header .links-container li a:hover {
+  opacity: 0.75;
 }
 
 .donate-link #donate {
@@ -120,6 +139,13 @@ header .links-container li a {
   border-radius: 25px;
   margin-right: 10px;
   font-size: 1.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.donate-link #donate:hover {
+  box-shadow: 10px 10px 20px black;
+  transform: translateY(-10px);
 }
 
 /* landing section */
@@ -423,8 +449,17 @@ video {
   font-size: 35px;
 }
 
+.locations-container li a:hover {
+  text-decoration: underline;
+}
+
 .locations-container li a img {
   width: 45px;
+  transition: 0.5s ease-in-out;
+}
+
+.locations-container li a img:hover {
+  transform: rotate(360deg);
 }
 
 .locations-container,
@@ -528,7 +563,6 @@ input {
 
 .inputBoxBtn:hover {
   box-shadow: 10px 10px 20px black;
-  transform: translateY(-10px);
   transition: 0.5s ease-in-out;
 }
 
@@ -560,8 +594,17 @@ input {
   border-radius: 20%;
 }
 
+.contact-links li {
+  transition: 0.5s ease-in-out;
+}
+
+.contact-links li:hover {
+  transform: rotate(360deg);
+}
+
 .contact-links li a {
   text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
 
 .contact-links li a img {
