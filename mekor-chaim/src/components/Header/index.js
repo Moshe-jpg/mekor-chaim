@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../../assets/mekor-chaim-logo.webp";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {
-
   const lightMode = () => {
-    document.querySelector("header").style.background = "rgba(0, 0, 0, 0.3)";
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-light)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -77,7 +78,6 @@ const Header = () => {
   };
 
   const darkMode = () => {
-    document.querySelector("header").style.background = "none";
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-dark)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -151,30 +151,35 @@ const Header = () => {
 
   return (
     <header>
-      <a href="/mekor-chaim" className="brand-logo">
-        <img src={logo} alt="mekor chaim logo" />
-      </a>
-      <ul className="links-container">
-        <ul className="color-way">
-          <li>
-            <div className="light-mode" onClick={lightMode}></div>
-          </li>
-          <li>
-            <div className="dark-mode" onClick={darkMode}></div>
-          </li>
-        </ul>
-        <li className="nav-links">
-          <a href="#about">About</a>
-        </li>
-        <li className="nav-links">
-          <a href="#contact">Contact</a>
-        </li>
-        <li className="nav-links donate-link">
-          <a href="/donate" id="donate">
-            Donate
-          </a>
-        </li>
-      </ul>
+      <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Container>
+          <Navbar.Brand>
+            <a href="/mekor-chaim" className="brand-logo">
+              <img src={logo} alt="mekor chaim logo" />
+            </a>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <ul className="color-way">
+                <li>
+                  <div className="light-mode" onClick={lightMode}></div>
+                </li>
+                <li>
+                  <div className="dark-mode" onClick={darkMode}></div>
+                </li>
+              </ul>
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link className="nav-links donate-link">
+                <a href="/donate" id="donate">
+                  Donate
+                </a>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </header>
   );
 };

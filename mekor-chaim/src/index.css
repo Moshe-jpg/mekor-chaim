@@ -49,11 +49,25 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-header .brand-logo {
-  padding-left: 5%;
+nav {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.container {
+  margin-right: 0px;
+  margin-left: 0px;
+  min-width: 100vw;
 }
 
 header .brand-logo img {
@@ -71,12 +85,13 @@ header .color-way {
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin: 0 5% 0 0;
+  margin: 0;
 }
 
 header .color-way li {
   list-style: none;
   transition: 0.5s ease-in-out;
+  margin: 0 10px;
 }
 
 header .color-way li:hover {
@@ -106,20 +121,7 @@ header .color-way .dark-mode {
   );
 }
 
-header .links-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-  padding-right: 5%;
-  margin: 0;
-}
-
-header .links-container li {
-  padding: 0 10px;
-}
-
-header .links-container li a {
+header .nav-link {
   color: var(--tertiary-dark);
   text-decoration: none;
   font-weight: 400;
@@ -129,7 +131,7 @@ header .links-container li a {
   transition: 0.5s ease-in-out;
 }
 
-header .links-container li a:hover {
+header .nav-link:hover {
   opacity: 0.75;
 }
 
@@ -137,10 +139,11 @@ header .links-container li a:hover {
   background: var(--secondary-dark);
   padding: 5px 10px;
   border-radius: 25px;
-  margin-right: 10px;
   font-size: 1.5rem;
   transition: 0.5s ease-in-out;
   opacity: 1;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .donate-link #donate:hover {
@@ -609,4 +612,75 @@ input {
 
 .contact-links li a img {
   width: 50px;
+}
+
+@media screen and (max-width: 500px) {
+
+  video {
+    object-fit: contain;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .landing-content h1 {
+    position: absolute;
+    top: 7rem;
+  }
+
+  .landing-content p {
+    position: absolute;
+    top: 34rem;
+  }
+
+  #offers {
+    flex-direction: column;
+  }
+
+  #offers h2 {
+    top: 222vh;
+  }
+  #offers ul {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #offers ul li {
+    margin: 10px 0;
+  }
+
+  .what-we-offer {
+    width: 100%;
+    min-height: unset;
+  }
+
+  .carousel-overlay {
+    display: none;
+  }
+
+  .carousel {
+    top: 0;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: none;
+  }
+
+  #founder .founder-card {
+    flex-direction: column;
+    height: unset;
+    text-align: center;
+    width: 95vw;
+  }
+
+  #founder .founder-card h2, #founder .founder-card .founder-desc {
+    margin: 0;
+    text-align: center;
+  }
+
+  .founder-pic img {
+    border-radius: 0;
+  }
 }
