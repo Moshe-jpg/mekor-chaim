@@ -1,11 +1,24 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import logo from "../../assets/mekor-chaim-logo.webp";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {
-  const lightMode = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+  console.log(width);
+
+  const lightMode = (width) => {
+    if (width === "500px") {
+      console.log("Light Mode Active");
+    }
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-light)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -18,6 +31,7 @@ const Header = () => {
     document.querySelector("#offers").style.background = "var(--primary-light)";
     document.querySelector("#offers h2 span").style.background =
       "var(--secondary-light)";
+
     const changeOffersLi = () => {
       var elems = document.querySelectorAll("#offers ul li span");
       var index = 0,

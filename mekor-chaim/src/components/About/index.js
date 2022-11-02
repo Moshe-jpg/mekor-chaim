@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React ,{ useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import bbqImg from "../../assets/bbq.webp";
 import bowlingImg from "../../assets/bowling.webp";
@@ -17,20 +17,43 @@ import zoomImg from "../../assets/zoom-seder.webp";
 import founderImg from "../../assets/founder.webp";
 
 const About = () => {
-  let bSize = {
-    backgroundSize: "cover",
-  };
+  // let bSize = {
+  //   backgroundSize: "cover",
+  // };
 
-  let bPosition = {
-    backgroundPosition: "50%",
-  };
+  // let bPosition = {
+  //   backgroundPosition: "50%",
+  // };
 
-  let bHeight = {
-    minHeight: "100%",
-  };
+  // let bHeight = {
+  //   minHeight: "100%",
+  // };
 
-  let bWidth = {
-    minWidth: "100%",
+  // let bWidth = {
+  //   minWidth: "100%",
+  // };
+
+  // <Carousel.Item>
+  //               <div
+  //                 className="d-block"
+  //                 style={{
+  //                   background: `url(${activity.img})`,
+  //                   ...bSize,
+  //                   ...bPosition,
+  //                   ...bHeight,
+  //                   ...bWidth,
+  //                 }}
+  //                 alt={activity.alt}
+  //               ></div>
+  //               <Carousel.Caption>
+  //                 <h3>{activity.caption}</h3>
+  //               </Carousel.Caption>
+  //             </Carousel.Item>
+
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
   };
 
   const [activities] = useState([
@@ -148,29 +171,22 @@ const About = () => {
             <span className="offers-item">Shidduch Initiative</span>✔
           </li>
         </ul>
-        <article className="what-we-offer">
-          <Carousel fade>
-            <div className="carousel-overlay"></div>
+        <div className="what-we-offer">
+          <Carousel  activeIndex={index} onSelect={handleSelect}>
             {activities.map((activity) => (
               <Carousel.Item>
-                <div
-                  className="d-block"
-                  style={{
-                    background: `url(${activity.img})`,
-                    ...bSize,
-                    ...bPosition,
-                    ...bHeight,
-                    ...bWidth,
-                  }}
-                  alt={activity.alt}
-                ></div>
-                <Carousel.Caption>
-                  <h3>{activity.caption}</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
+              <img
+                className="d-block w-100 h-100"
+                src={activity.img}
+                alt={activity.alt}
+              />
+              <Carousel.Caption>
+                <h3>{activity.caption}</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
             ))}
           </Carousel>
-        </article>
+        </div>
         <ul id="offer-container-2">
           <li>
             <span className="offers-item">​Like-Minded Community</span>✔​
@@ -207,8 +223,8 @@ const About = () => {
               Towards the end of his years in Beis Medrash, he participated in
               Rav Cohen’s comprehensive teacher-training course. In 2018, Rabbi
               Blumberg founded Mekor Chaim. Rabbi Blumberg has a strong
-              connection to ‘his guys’ and provides them with a solid
-              foundation to succeed in life as a Ben Torah in the workforce.
+              connection to ‘his guys’ and provides them with a solid foundation
+              to succeed in life as a Ben Torah in the workforce.
             </p>
           </div>
           <div className="founder-pic">

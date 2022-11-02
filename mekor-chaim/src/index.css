@@ -339,14 +339,6 @@ video {
   display: none;
 }
 
-.carousel-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 100;
-}
-
 /* Founder section */
 
 #founder {
@@ -624,17 +616,27 @@ input {
   }
 
   .landing-content h1, .landing-content p {
-    color: var(--tertiary-light);
+    color: var(--primary-light);
   }
 
   .landing-content h1 {
-    position: absolute;
-    top: 7rem;
+    font-size: 2rem;
+    position: relative;
+    bottom: 25%;
+    filter: invert(1);
   }
 
   .landing-content p {
-    position: absolute;
-    top: 34rem;
+    position: relative;
+    top: 25%;
+    filter: invert(1);
+  }
+
+  .who-we-are h2 {
+    position: relative;
+    bottom: 20rem;
+    top: unset;
+    font-size: 2rem;
   }
 
   #offers {
@@ -664,15 +666,30 @@ input {
 
   .what-we-offer {
     width: 100%;
+    height: 32vh;
     min-height: unset;
   }
 
-  .carousel-overlay {
-    display: none;
-  }
 
   .carousel {
     top: 0;
+  }
+
+  .carousel-item {
+    min-height: 300px;
+  }
+
+  .carousel-item .d-block {
+    min-height: 299px;
+    max-height: 300px;
+  }
+
+  .carousel-item.active {
+    max-width: 100%;
+    width: 100%;
+    min-width: 200px;
+    min-height: 350px;
+    margin: 0;
   }
 
   .carousel-control-next span,
@@ -706,6 +723,7 @@ input {
 
   .founder-pic img {
     border-radius: 0;
+    width: 75%;
   }
 
   #contact {
@@ -730,7 +748,8 @@ input {
   }
 
   .contact-links {
-    top: 660vh;
+    top: 0;
+    position: relative;
     width: 100%;
   }
 }

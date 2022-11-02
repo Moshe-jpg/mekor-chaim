@@ -1,5 +1,5 @@
 import React from "react";
-import videoBg from "../../assets/video-bg.mp4";
+import videoBg from "../../assets/video-bg-edited.mp4";
 
 const LandingPage = () => {
     return (
