@@ -308,6 +308,12 @@ video {
   top: 120px;
 }
 
+.carousel-item .d-block {
+  min-height: 399px;
+  max-height: 400px;
+  min-width: 550px;
+}
+
 .carousel-fade .carousel-item.active {
   width: 400px;
   height: 400px;
@@ -682,6 +688,7 @@ input {
   .carousel-item .d-block {
     min-height: 299px;
     max-height: 300px;
+    min-width: none;
   }
 
   .carousel-item.active {
