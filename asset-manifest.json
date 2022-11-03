@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mekor-chaim/static/css/main.d211c7fc.css",
+    "main.css": "/mekor-chaim/static/css/main.7536e731.css",
     "main.js": "/mekor-chaim/static/js/main.13a10ca3.js",
     "static/js/787.0a1ad305.chunk.js": "/mekor-chaim/static/js/787.0a1ad305.chunk.js",
     "static/media/video-bg-edited.mp4": "/mekor-chaim/static/media/video-bg-edited.519147f5d38261b2e917.mp4",
@@ -26,12 +26,12 @@
     "static/media/learning-seder.webp": "/mekor-chaim/static/media/learning-seder.d47d231494b80db2cbec.webp",
     "index.html": "/mekor-chaim/index.html",
     "static/media/mekor-chaim-logo.webp": "/mekor-chaim/static/media/mekor-chaim-logo.c999b9bf9e3d967d7426.webp",
-    "main.d211c7fc.css.map": "/mekor-chaim/static/css/main.d211c7fc.css.map",
+    "main.7536e731.css.map": "/mekor-chaim/static/css/main.7536e731.css.map",
     "main.13a10ca3.js.map": "/mekor-chaim/static/js/main.13a10ca3.js.map",
     "787.0a1ad305.chunk.js.map": "/mekor-chaim/static/js/787.0a1ad305.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d211c7fc.css",
+    "static/css/main.7536e731.css",
     "static/js/main.13a10ca3.js"
   ]
 }
