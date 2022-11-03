@@ -1,24 +1,18 @@
-import { React, useState, useEffect } from "react";
+import React from "react";
 import logo from "../../assets/mekor-chaim-logo.webp";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const updateDimensions = () => {
-    setWidth(window.innerWidth);
-  };
-  useEffect(() => {
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
-  }, []);
-  console.log(width);
-
-  const lightMode = (width) => {
-    if (width === "500px") {
-      console.log("Light Mode Active");
+  const lightMode = () => {
+    if (window.screen.width < "500px") {
+      document.querySelector(".landing-header").style.color =
+        "var(--tertiary-light)";
+      document.querySelector(".landing-text").style.color =
+        "var(--tertiary-light)";
     }
+
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-light)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -37,12 +31,13 @@ const Header = () => {
       var index = 0,
         length = elems.length;
       for (; index < length; index++) {
-        elems[index].style.backgroundColor = "var(--secondary-light)";
+        elems[index].style.color = "var(--tertiary-light)";
+        if (window.screen.width > "500px") {
+          elems[index].style.backgroundColor = "var(--secondary-dark)";
+        }
       }
     };
 
-    document.querySelector(".offers-item").style.background =
-      "var(--secondary-light)";
     document.querySelector("#founder").style.background =
       "var(--secondary-light)";
     document.querySelector(".orange").style.color = "var(--secondary-light)";
@@ -92,6 +87,12 @@ const Header = () => {
   };
 
   const darkMode = () => {
+    if (window.screen.width < "500px") {
+      document.querySelector(".landing-content h1").style.color =
+        "var(--tertiary-dark)";
+      document.querySelector(".landing-content p").style.color =
+        "var(--tertiary-dark)";
+    }
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-dark)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -109,12 +110,10 @@ const Header = () => {
       var index = 0,
         length = elems.length;
       for (; index < length; index++) {
-        elems[index].style.backgroundColor = "var(--secondary-dark)";
+        elems[index].style.color = "var(--tertiary-dark)";
       }
     };
 
-    document.querySelector(".offers-item").style.background =
-      "var(--secondary-dark)";
     document.querySelector("#founder").style.background =
       "var(--secondary-dark)";
     document.querySelector(".orange").style.color = "var(--secondary-dark)";

@@ -7,8 +7,8 @@ const LandingPage = () => {
         <div className="overlay"></div>
         <video id="video" src={videoBg} autoPlay loop muted />
         <div className="landing-content">
-          <h1>Mekor Chaim</h1>
-          <p>Life After Yeshiva</p>
+          <h1 className="landing-header">Mekor Chaim</h1>
+          <p className="landing-text">Life After Yeshiva</p>
         </div>
       </section>
     )

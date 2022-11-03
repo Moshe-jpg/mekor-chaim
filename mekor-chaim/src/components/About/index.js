@@ -17,38 +17,6 @@ import zoomImg from "../../assets/zoom-seder.webp";
 import founderImg from "../../assets/founder.webp";
 
 const About = () => {
-  // let bSize = {
-  //   backgroundSize: "cover",
-  // };
-
-  // let bPosition = {
-  //   backgroundPosition: "50%",
-  // };
-
-  // let bHeight = {
-  //   minHeight: "100%",
-  // };
-
-  // let bWidth = {
-  //   minWidth: "100%",
-  // };
-
-  // <Carousel.Item>
-  //               <div
-  //                 className="d-block"
-  //                 style={{
-  //                   background: `url(${activity.img})`,
-  //                   ...bSize,
-  //                   ...bPosition,
-  //                   ...bHeight,
-  //                   ...bWidth,
-  //                 }}
-  //                 alt={activity.alt}
-  //               ></div>
-  //               <Carousel.Caption>
-  //                 <h3>{activity.caption}</h3>
-  //               </Carousel.Caption>
-  //             </Carousel.Item>
 
   const [index, setIndex] = useState(0);
 
@@ -133,7 +101,7 @@ const About = () => {
   return (
     <>
       <section id="about">
-        <article className="who-we-are">
+        <div className="who-we-are">
           <h2>
             <span>Who We Are</span>
           </h2>
@@ -145,7 +113,7 @@ const About = () => {
             location, to stay fully focused on their careers while continuing on
             the path of true bnei torah.
           </p>
-        </article>
+        </div>
       </section>
       <section id="offers">
         <h2>
