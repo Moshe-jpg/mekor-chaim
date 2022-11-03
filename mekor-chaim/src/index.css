@@ -377,7 +377,7 @@ video {
 }
 
 #founder .founder-card h2 {
-  size: 3.5rem;
+  font-size: 2rem;
   margin-left: 25px;
   font-family: "Bitter", serif;
   font-weight: bold;
@@ -674,12 +674,14 @@ input {
     position: relative;
     top: 15vh;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   #offers ul li {
     margin: 10px;
     width: 40%;
+    font-size: 14px;
   }
 
   #offers ul li span {
@@ -738,6 +740,10 @@ input {
     width: 95vw;
   }
 
+  #founder .founder-card h2  {
+    font-size: 1.5rem;
+  }
+
   #founder .founder-card h2,
   #founder .founder-card .founder-desc {
     margin: 0;
@@ -745,13 +751,17 @@ input {
   }
 
   #founder .founder-card .founder-desc {
+    font-size: 14px;
+  }
+
+  #founder .founder-card .founder-desc {
     position: relative;
-    top: 15rem;
+    top: 12.5rem;
   }
 
   .founder-pic {
     position: relative;
-    bottom: 15rem;
+    bottom: 17.5rem;
   }
 
   .founder-pic img {
