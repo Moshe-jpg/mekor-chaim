@@ -745,7 +745,7 @@ input {
     position: absolute;
     left: 0;
     right: 0;
-    top: 5rem;
+    top: 15vh;
   }
 
   #founder .founder-card h2,
@@ -760,7 +760,7 @@ input {
 
   #founder .founder-card .founder-desc {
     position: absolute;
-    top: 22.5rem;
+    top: 60vh;
     left: 0;
     right: 0;
     padding: 0 7%;
@@ -768,12 +768,12 @@ input {
 
   .founder-pic {
     position: absolute;
-    top: 9rem;
+    top: 25vh;
 }
 
   .founder-pic img {
     border-radius: 0;
-    width: 75%;
+    width: 15rem;
   }
 
   #contact {
