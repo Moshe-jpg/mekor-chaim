@@ -756,7 +756,7 @@ input {
 
   #founder .founder-card .founder-desc {
     position: relative;
-    top: 12.5rem;
+    top: 8.5rem;
   }
 
   .founder-pic {
@@ -793,7 +793,7 @@ input {
   .locations-container li span {
     display: unset;
     position: unset;
-    width: 30%;
+    width: auto;
     font-size: 16px;
   }
 
