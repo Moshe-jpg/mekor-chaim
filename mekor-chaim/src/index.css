@@ -26,6 +26,7 @@ body::-webkit-scrollbar {
 }
 main {
   min-height: 100vh;
+  background: var(--primary-dark);
 }
 
 section {
@@ -666,6 +667,7 @@ input {
   #offers h2 {
     position: relative;
     top: 10vh;
+    font-size: 2rem;
   }
   #offers ul {
     width: 100%;
@@ -690,12 +692,12 @@ input {
     position: relative;
     top: 15vh;
     margin-top: 30px;
-
   }
 
   .carousel {
     top: 0;
     min-height: 55vh;
+    overflow: hidden;
   }
 
   .carousel-item {
@@ -750,7 +752,7 @@ input {
   .founder-pic {
     position: relative;
     bottom: 15rem;
-}
+  }
 
   .founder-pic img {
     border-radius: 0;
@@ -767,13 +769,30 @@ input {
   .contact-form {
     width: 90%;
     text-align: center;
+    position: relative;
+    top: 5rem;
+  }
+
+  .locations-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .locations-container li span {
-    display: block;
-    position: relative;
-    left: 35%;
-    width: 9rem;
+    display: unset;
+    position: unset;
+    width: 30%;
+    font-size: 16px;
+  }
+
+  .locations-container li a {
+    font-size: 26px;
+  }
+
+  .locations-container li a img {
+    width: 25px;
   }
 
   .contact-form {
