@@ -742,6 +742,10 @@ input {
 
   #founder .founder-card h2  {
     font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5rem;
   }
 
   #founder .founder-card h2,
@@ -755,14 +759,17 @@ input {
   }
 
   #founder .founder-card .founder-desc {
-    position: relative;
-    top: 8.5rem;
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    right: 0;
+    padding: 0 7%;
   }
 
   .founder-pic {
-    position: relative;
-    bottom: 17.5rem;
-  }
+    position: absolute;
+    top: 10rem;
+}
 
   .founder-pic img {
     border-radius: 0;
@@ -773,6 +780,7 @@ input {
     flex-direction: column;
     position: relative;
     top: 15vh;
+    padding: 0 0 10vh;
   }
 
   .locations-container,
@@ -793,7 +801,7 @@ input {
   .locations-container li span {
     display: unset;
     position: unset;
-    width: auto;
+    width: 37%;
     font-size: 16px;
   }
 
@@ -807,6 +815,18 @@ input {
 
   .contact-form {
     margin: 5rem 0 8.5rem;
+  }
+
+  .inputBoxMessage {
+    margin-bottom: 0;
+  }
+
+  .contact-form .contact-header {
+    margin-bottom: 10%;
+  }
+
+  .inputBoxBtnContainer {
+    margin-top: 10%;
   }
 
   .contact-links {
