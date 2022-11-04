@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mekor-chaim/static/css/main.72b46995.css",
-    "main.js": "/mekor-chaim/static/js/main.54308b62.js",
+    "main.js": "/mekor-chaim/static/js/main.d64319d2.js",
     "static/js/787.0a1ad305.chunk.js": "/mekor-chaim/static/js/787.0a1ad305.chunk.js",
     "static/media/video-bg-edited.mp4": "/mekor-chaim/static/media/video-bg-edited.519147f5d38261b2e917.mp4",
     "static/media/who-we-are-img.webp": "/mekor-chaim/static/media/who-we-are-img.878b2fe88611a07fe4b4.webp",
@@ -27,11 +27,11 @@
     "index.html": "/mekor-chaim/index.html",
     "static/media/mekor-chaim-logo.webp": "/mekor-chaim/static/media/mekor-chaim-logo.c999b9bf9e3d967d7426.webp",
     "main.72b46995.css.map": "/mekor-chaim/static/css/main.72b46995.css.map",
-    "main.54308b62.js.map": "/mekor-chaim/static/js/main.54308b62.js.map",
+    "main.d64319d2.js.map": "/mekor-chaim/static/js/main.d64319d2.js.map",
     "787.0a1ad305.chunk.js.map": "/mekor-chaim/static/js/787.0a1ad305.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72b46995.css",
-    "static/js/main.54308b62.js"
+    "static/js/main.d64319d2.js"
   ]
 }
