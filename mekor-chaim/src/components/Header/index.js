@@ -12,7 +12,7 @@ const Header = () => {
       document.querySelector(".landing-text").style.color =
         "var(--tertiary-light)";
     }
-
+    document.querySelector("main").style.backgroundColor = "var(--primary-light)";
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-light)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -31,10 +31,7 @@ const Header = () => {
       var index = 0,
         length = elems.length;
       for (; index < length; index++) {
-        elems[index].style.color = "var(--tertiary-light)";
-        if (window.screen.width > "500px") {
-          elems[index].style.backgroundColor = "var(--secondary-dark)";
-        }
+          elems[index].style.backgroundColor = "var(--secondary-light)";
       }
     };
 
@@ -79,6 +76,7 @@ const Header = () => {
 
     document.querySelector(".inputBoxBtn").style.backgroundColor = "#4649FF";
     document.querySelector(".inputBoxBtn").style.color = "var(--primary-light)";
+    document.querySelector("#gmail").style.backgroundColor = "var(--tertiary-light)";
 
     changeOffersLi();
     changeLocationsContainer();
@@ -93,6 +91,7 @@ const Header = () => {
       document.querySelector(".landing-content p").style.color =
         "var(--tertiary-dark)";
     }
+    document.querySelector("main").style.backgroundColor = "var(--primary-dark)";
     document.querySelector(".donate-link #donate").style.background =
       "var(--secondary-dark)";
     document.querySelector("#landingSection").style.backgroundColor =
@@ -111,6 +110,7 @@ const Header = () => {
         length = elems.length;
       for (; index < length; index++) {
         elems[index].style.color = "var(--tertiary-dark)";
+        elems[index].style.backgroundColor = "var(--secondary-dark)";
       }
     };
 
@@ -155,6 +155,7 @@ const Header = () => {
     document.querySelector(".inputBoxBtn").style.backgroundColor =
       "var(--secondary-dark)";
     document.querySelector(".inputBoxBtn").style.color = "var(--tertiary-dark)";
+    document.querySelector("#gmail").style.backgroundColor = "var(--tertiary-dark)";
 
     changeOffersLi();
     changeLocationsContainer();

@@ -249,7 +249,7 @@ video {
   background: var(--primary-dark);
   color: var(--tertiary-dark);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -269,18 +269,27 @@ video {
 
 #offers ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 0;
-  width: 50%;
   text-align: center;
+  position: relative;
+}
+
+#offer-container-1 {
+  top: 5rem;
+}
+
+#offer-container-2 {
+  bottom: 5rem;
 }
 
 #offers ul li {
   list-style: none;
-  width: 100%;
+  width: 30%;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 1px;
@@ -572,7 +581,7 @@ input {
 
 .contact-links {
   position: absolute;
-  top: 530vh;
+  top: 563vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -611,6 +620,127 @@ input {
 
 .contact-links li a img {
   width: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-item .d-block {
+    min-height: 49vh;
+    max-height: 50vh;
+    min-width: 60vw;
+  }
+
+  #offers ul li {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  #offers ul li {
+    width: 40vw;
+  }
+
+  .contact-links {
+    top: 590vh;
+  }
+
+  #founder .founder-card {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #founder .founder-card .founder-info {
+    text-align: center;
+  }
+
+  #founder .founder-card h2,
+  #founder .founder-card .founder-desc {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  .locations-container {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .locations-container li {
+    margin: 15px 25px;
+    text-align: center;
+    min-height: 30vh;
+  }
+
+  .locations-container li span {
+    display: block;
+  }
+
+  .contact-form {
+    width: 75%;
+    margin-bottom: 8rem;
+  }
+
+  .contact-links {
+    top: 650vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #offers {
+    padding: 10vh 0 0;
+  }
+
+  #offer-container-2 {
+    bottom: 10rem;
+  }
+
+  #offers ul li {
+    width: 65vw;
+  }
+
+  #founder {
+    position: relative;
+    bottom: 7rem;
+  }
+
+  .contact-form {
+    margin-bottom: 0;
+  }
+
+  .contact-links {
+    top: 545vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #contact {
+    position: relative;
+    bottom: 5rem;
+    overflow: hidden;
+  }
+
+  .locations-container {
+    flex-direction: column;
+    position: relative;
+    top: 5rem;
+  }
+
+  .locations-container li {
+    min-height: 25vh;
+    width: 50vw;
+  }
+
+  .contact-form {
+    margin-top: 15rem;
+  }
+
+  .contact-links {
+    top: 3rem;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -740,7 +870,7 @@ input {
     width: 95vw;
   }
 
-  #founder .founder-card h2  {
+  #founder .founder-card h2 {
     font-size: 1.5rem;
     position: absolute;
     left: 0;
@@ -769,11 +899,11 @@ input {
   .founder-pic {
     position: absolute;
     top: 25vh;
-}
+  }
 
   .founder-pic img {
     border-radius: 0;
-    width: 15rem;
+    width: 10rem;
   }
 
   #contact {
@@ -801,7 +931,7 @@ input {
   .locations-container li span {
     display: unset;
     position: unset;
-    width: 37%;
+    width: 55vw;
     font-size: 16px;
   }
 
