@@ -10,6 +10,7 @@ const LandingPage = () => {
           {/* <img src={mcLogo}></img> */}
           Mekor Chaim
         </h1>
+        <div className="horizontal-line"></div>
         <p className="landing-text">Life After Yeshiva</p>
       </div>
     </section>

@@ -23,7 +23,6 @@ const Header = () => {
       <ul className={active}>
         <li
           className="nav-item"
-          id="about"
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");
@@ -33,7 +32,6 @@ const Header = () => {
         </li>
         <li
           className="nav-item"
-          id="donate"
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");
@@ -43,7 +41,6 @@ const Header = () => {
         </li>
         <li
           className="nav-item"
-          id="contact"
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=IBM+Plex+Sans+Arabic&family=Signika+Negative&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=IBM+Plex+Sans+Arabic&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,20 +7,21 @@
 }
 
 :root {
-  --off-orange: #e32323;
   --white: #ffffff;
   --black: #000000;
-  --main-font: 'IBM Plex Sans Arabic', sans-serif;
-  --small-header-font: font-family: 'EB Garamond', serif;
-  --large-header-font: 'Signika Negative', sans-serif;
+  --off-orange: #e32323;
+  --off-red: #8f0a0a;
+  --main-font: "IBM Plex Sans Arabic", sans-serif;
+  --header-font: "EB Garamond", serif;
 }
 
 body {
   overflow-x: hidden;
-  font-family: var(--main-font)
+  font-family: var(--main-font);
 }
 
-li, a {
+li,
+a {
   all: unset;
 }
 
@@ -108,27 +108,86 @@ nav .nav-active {
   align-items: center;
   justify-content: space-evenly;
   height: 50vh;
+  padding: 0 20px;
+  border: 1px solid var(--off-red);
+  border-radius: 5px;
 }
 
 .landing-header {
-  font-family: var(--large-header-font);
+  font-family: var(---header-font);
   font-size: 77px;
   letter-spacing: 1px;
   color: var(--off-orange);
 }
 
 .landing-text {
-  font-family: var(--main-font);
+  font-family: var(--header-font);
   font-size: 35px;
+}
+
+/* about section  */
+
+#about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#about .about-header-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./assets/bm-full.webp");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  text-align: center;
+}
+
+#about .about-header-text {
+  width: 40vw;
+  margin: 10px;
+  padding: 50px 20px;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.65);
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-family: var(--main-font);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 330px;
+}
+
+#about .about-header-text img {
+  width: 65px;
+  display: block;
+  margin: 0 auto;
 }
 
 /*  */
 
-.separation-line {
-  width: 95vw;
+.horizontal-line {
+  width: 95%;
   height: 1px;
   background: var(--off-orange);
-  margin: 0 auto;
+  margin: 50px auto;
+}
+
+.vertical-line {
+  height: 65%;
+  width: 1px;
+  background: var(--off-orange);
+  /* margin: 50px auto; */
 }
 
 /*  */
@@ -259,12 +318,41 @@ input {
   /* landing page section */
 
   #landing-page {
-      margin-top: 15vh;
+    margin-top: 15vh;
   }
 
   .landing-container {
     justify-content: space-evenly;
     margin-bottom: 150px;
-    height: 70vh;
+    padding: 0 5px;
+    width: 90vw;
+    /* height: 70vh; */
   }
+
+  /* about section */
+  #about .about-header-container {
+    background: url("./assets/morning-seder.webp");
+    background-size: cover;
+    background-position: 50%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #about .about-header-text  {
+    width: 95vw;
+    margin: 20px 0;
+  }
+
+  /*  */
+
+  .horizontal-line {
+    margin: 0;
+    width: 85%;
+  }
+  .vertical-line {
+    display: none;
+  }
+
+/*  */
+
 }
