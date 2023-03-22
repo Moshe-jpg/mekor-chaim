@@ -1,10 +1,9 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
-import LandingPage from "./components/LandingPage";
-import About from "./components/About"; 
-import Contact from "./components/Contact";
+// import LandingPage from "./components/LandingPage";
+// import About from "./components/About";
 // import Donate from "./components/Donate";
+// import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -12,9 +11,11 @@ function App() {
     <>
       <Header />
       <main>
-        <LandingPage />
-        <About />
-        <Contact />
+        {/* <LandingPage /> */}
+        {/* <About /> */}
+        {/* <Donate /> */}
+        {/* <Contact /> */}
+        {/* <Footer /> */}
       </main>
     </>
   );
