@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-// import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/LandingPage";
 // import About from "./components/About";
 // import Donate from "./components/Donate";
 // import Contact from "./components/Contact";
@@ -11,7 +11,8 @@ function App() {
     <>
       <Header />
       <main>
-        {/* <LandingPage /> */}
+        <LandingPage />
+        <div className="separation-line"></div>
         {/* <About /> */}
         {/* <Donate /> */}
         {/* <Contact /> */}

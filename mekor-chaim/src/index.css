@@ -8,8 +8,8 @@
 }
 
 :root {
-  --primary-dark: #e32323;
-  --primary-light: #ffffff;
+  --off-orange: #e32323;
+  --white: #ffffff;
   --black: #000000;
   --main-font: 'IBM Plex Sans Arabic', sans-serif;
   --small-header-font: font-family: 'EB Garamond', serif;
@@ -29,20 +29,22 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Navbar section */
+
 nav {
   width: 100%;
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 45px;
   flex-direction: row;
-  border-bottom: 1px solid var(--primary-dark);
+  border-bottom: 1px solid var(--off-orange);
   z-index: 975;
 }
 
 nav .nav-logo-container {
-  width: 105px;
+  width: 85px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +73,8 @@ nav .nav-logo {
 
 .nav-menu .nav-item:hover {
   transform: scale(1.15);
-  background: var(--primary-dark);
-  color: var(--primary-light);
+  background: var(--off-orange);
+  color: var(--white);
 }
 
 nav .toggler {
@@ -87,6 +89,49 @@ nav .toggler img {
 nav .nav-active {
   transform: translateX(0);
 }
+
+/* Landing Page section */
+
+#landing-page {
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+.landing-header {
+  font-family: var(--large-header-font);
+  font-size: 77px;
+  letter-spacing: 1px;
+  color: var(--off-orange);
+}
+
+.landing-text {
+  font-family: var(--main-font);
+  font-size: 35px;
+}
+
+/*  */
+
+.separation-line {
+  width: 95vw;
+  height: 1px;
+  background: var(--off-orange);
+  margin: 0 auto;
+}
+
+/*  */
 
 /* contact form styling */
 input {
@@ -172,6 +217,14 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  /* navbar */
+
+  nav {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    background: var(white);
+  }
   nav .toggler {
     display: block;
   }
@@ -187,14 +240,31 @@ input {
 
   nav ul {
     position: fixed;
-    top: 10vh;
+    top: 15vh;
     right: 0;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     flex-direction: column;
     transform: translateX(100%);
-    background-color: var(--white);
+    background-color: var(--black);
     opacity: 0.9;
     transition: 0.5s ease-in-out;
+  }
+
+  .nav-menu .nav-item {
+    margin: 0;
+    color: var(--white);
+  }
+
+  /* landing page section */
+
+  #landing-page {
+      margin-top: 15vh;
+  }
+
+  .landing-container {
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+    height: 70vh;
   }
 }
