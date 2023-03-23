@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.css": "/mekor-chaim/static/css/main.72b46995.css",
-    "main.js": "/mekor-chaim/static/js/main.d64319d2.js",
+    "main.css": "/mekor-chaim/static/css/main.4609e6d5.css",
+    "main.js": "/mekor-chaim/static/js/main.b49f3fad.js",
     "static/js/787.0a1ad305.chunk.js": "/mekor-chaim/static/js/787.0a1ad305.chunk.js",
-    "static/media/video-bg-edited.mp4": "/mekor-chaim/static/media/video-bg-edited.519147f5d38261b2e917.mp4",
-    "static/media/who-we-are-img.webp": "/mekor-chaim/static/media/who-we-are-img.878b2fe88611a07fe4b4.webp",
+    "static/media/bm-full.webp": "/mekor-chaim/static/media/bm-full.878b2fe88611a07fe4b4.webp",
     "static/media/zoom-seder.webp": "/mekor-chaim/static/media/zoom-seder.cd4015a5b52bd3f640ab.webp",
-    "static/media/founder.webp": "/mekor-chaim/static/media/founder.f2e6a40e5ef79776c820.webp",
     "static/media/morning-seder.webp": "/mekor-chaim/static/media/morning-seder.0623c3b57ce381bc14cf.webp",
     "static/media/escape-room.webp": "/mekor-chaim/static/media/escape-room.89be86bb6e893475b5ae.webp",
+    "static/media/learn.png": "/mekor-chaim/static/media/learn.80912399513100b43c7c.png",
     "static/media/softball-game.webp": "/mekor-chaim/static/media/softball-game.e06ceadec4d69aa20044.webp",
-    "static/media/google-maps.png": "/mekor-chaim/static/media/google-maps.9cd98cdf6cc619102a9b.png",
-    "static/media/spotify.png": "/mekor-chaim/static/media/spotify.0e63fc40ab2cc2eceb61.png",
     "static/media/bowling.webp": "/mekor-chaim/static/media/bowling.fc374f2b9bcd78e00218.webp",
     "static/media/brooklyn-vaad.webp": "/mekor-chaim/static/media/brooklyn-vaad.0f89a44cd94b03c77699.webp",
     "static/media/purim-seuda.webp": "/mekor-chaim/static/media/purim-seuda.477a0ca50bf9d1f1ffeb.webp",
@@ -19,19 +16,17 @@
     "static/media/mekor-chaim-simcha.webp": "/mekor-chaim/static/media/mekor-chaim-simcha.c331277b46c57dae3b47.webp",
     "static/media/shabbaton.webp": "/mekor-chaim/static/media/shabbaton.683fed370953265dfeab.webp",
     "static/media/melaveh-malka.webp": "/mekor-chaim/static/media/melaveh-malka.6a95ebdc831a1fd85a02.webp",
-    "static/media/phone.png": "/mekor-chaim/static/media/phone.4070332f760c85568aea.png",
     "static/media/bbq.webp": "/mekor-chaim/static/media/bbq.2759b4f209ad7baf3cc5.webp",
     "static/media/purim-chagiga.webp": "/mekor-chaim/static/media/purim-chagiga.a1e3cb008a5f61888d05.webp",
-    "static/media/linkedin.png": "/mekor-chaim/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/learning-seder.webp": "/mekor-chaim/static/media/learning-seder.d47d231494b80db2cbec.webp",
-    "index.html": "/mekor-chaim/index.html",
     "static/media/mekor-chaim-logo.webp": "/mekor-chaim/static/media/mekor-chaim-logo.c999b9bf9e3d967d7426.webp",
-    "main.72b46995.css.map": "/mekor-chaim/static/css/main.72b46995.css.map",
-    "main.d64319d2.js.map": "/mekor-chaim/static/js/main.d64319d2.js.map",
+    "index.html": "/mekor-chaim/index.html",
+    "main.4609e6d5.css.map": "/mekor-chaim/static/css/main.4609e6d5.css.map",
+    "main.b49f3fad.js.map": "/mekor-chaim/static/js/main.b49f3fad.js.map",
     "787.0a1ad305.chunk.js.map": "/mekor-chaim/static/js/787.0a1ad305.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72b46995.css",
-    "static/js/main.d64319d2.js"
+    "static/css/main.4609e6d5.css",
+    "static/js/main.b49f3fad.js"
   ]
 }
