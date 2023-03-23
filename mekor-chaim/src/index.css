@@ -106,7 +106,7 @@ nav .nav-active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 50vh;
   padding: 0 20px;
   border: 1px solid var(--off-red);
@@ -135,10 +135,7 @@ nav .nav-active {
 
 #about .about-header-container {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-height: 100%;
   background: url("./assets/bm-full.webp");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
@@ -174,6 +171,70 @@ nav .nav-active {
   margin: 0 auto;
 }
 
+#about .activities-container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#about .about-activity-container {
+  position: relative;
+}
+
+#about .activities-container header {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#about .activities-container header h3 {
+  font-size: 45px;
+  font-family: var(--header-font);
+  letter-spacing: 1.2px;
+}
+
+#about .about-activity {
+  width: 400px;
+  height: 300px;
+  margin: 15px;
+}
+
+#about .about-image-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  background: rgb(255, 255, 255, 0.65);
+  font-size: 22px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+#about .about-image-overlay:hover {
+ opacity: 1;
+} 
+
+#about .offering-text {
+  width: 45vw;
+  height: 250px;
+  background: var(--off-red);
+}
+
+
+
 /*  */
 
 .horizontal-line {
@@ -188,6 +249,14 @@ nav .nav-active {
   width: 1px;
   background: var(--off-orange);
   /* margin: 50px auto; */
+}
+
+.large-hidden {
+  display: none;
+}
+
+.small-hidden {
+  display: block;
 }
 
 /*  */
@@ -315,6 +384,18 @@ input {
     color: var(--white);
   }
 
+  /*  */
+
+  .large-hidden {
+  display: block;
+}
+
+.small-hidden {
+  display: none;
+}
+
+  /*  */
+
   /* landing page section */
 
   #landing-page {
@@ -342,6 +423,12 @@ input {
     width: 95vw;
     margin: 20px 0;
   }
+
+  #about .about-activity {
+  width: 90vw;
+  height: 35vh;
+  margin: 10px 0;
+}
 
   /*  */
 

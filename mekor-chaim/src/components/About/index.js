@@ -1,96 +1,96 @@
 import React from "react";
 import learnImg from "../../assets/learn.png";
 import torahImg from "../../assets/torah-scroll.png";
-// import bbqImg from "../../assets/bbq.webp";
-// import bowlingImg from "../../assets/bowling.webp";
-// import bkVaadImg from "../../assets/brooklyn-vaad.webp";
-// import escapeImg from "../../assets/escape-room.webp";
-// import fiveTcImg from "../../assets/five-towns-chabura.webp";
-// import lsImg from "../../assets/learning-seder.webp";
-// import simchaImg from "../../assets/mekor-chaim-simcha.webp";
-// import melavehhMalkaImg from "../../assets/melaveh-malka.webp";
-// import morningSederImg from "../../assets/morning-seder.webp";
-// import purimcImg from "../../assets/purim-chagiga.webp";
-// import purimSeudaImg from "../../assets/purim-seuda.webp";
-// import shabbatonImg from "../../assets/shabbaton.webp";
-// import softballImg from "../../assets/softball-game.webp";
-// import zoomImg from "../../assets/zoom-seder.webp";
+import bbqImg from "../../assets/bbq.webp";
+import bowlingImg from "../../assets/bowling.webp";
+import bkVaadImg from "../../assets/brooklyn-vaad.webp";
+import escapeImg from "../../assets/escape-room.webp";
+import fiveTcImg from "../../assets/five-towns-chabura.webp";
+import lsImg from "../../assets/learning-seder.webp";
+import simchaImg from "../../assets/mekor-chaim-simcha.webp";
+import melavehhMalkaImg from "../../assets/melaveh-malka.webp";
+import morningSederImg from "../../assets/morning-seder.webp";
+import purimcImg from "../../assets/purim-chagiga.webp";
+import purimSeudaImg from "../../assets/purim-seuda.webp";
+import shabbatonImg from "../../assets/shabbaton.webp";
+import softballImg from "../../assets/softball-game.webp";
+import zoomImg from "../../assets/zoom-seder.webp";
 // import founderImg from "../../assets/founder.webp";
 
 const About = () => {
-  // const activities = [
-  //   {
-  //     img: bkVaadImg,
-  //     alt: "Brooklyn Vaad",
-  //     caption: "Brooklyn Vaad",
-  //   },
-  //   {
-  //     img: bbqImg,
-  //     alt: "barbecue",
-  //     caption: "BBQ",
-  //   },
-  //   {
-  //     img: fiveTcImg,
-  //     alt: "Five Towns Chaburah",
-  //     caption: "Five Towns Chaburah",
-  //   },
-  //   {
-  //     img: bowlingImg,
-  //     alt: "Bowling",
-  //     caption: "Bowling",
-  //   },
-  //   {
-  //     img: lsImg,
-  //     alt: "Learning Seder",
-  //     caption: "Learning Seder",
-  //   },
-  //   {
-  //     img: escapeImg,
-  //     alt: "Escape Room",
-  //     caption: "Escape Room",
-  //   },
+  const activities = [
+    {
+      img: bkVaadImg,
+      alt: "Brooklyn Vaad",
+      title: "Brooklyn Vaad",
+    },
+    {
+      img: bbqImg,
+      alt: "barbecue",
+      title: "BBQ",
+    },
+    {
+      img: fiveTcImg,
+      alt: "Five Towns Chaburah",
+      title: "Five Towns Chaburah",
+    },
+    {
+      img: bowlingImg,
+      alt: "Bowling",
+      title: "Bowling",
+    },
+    {
+      img: lsImg,
+      alt: "Learning Seder",
+      title: "Learning Seder",
+    },
+    {
+      img: escapeImg,
+      alt: "Escape Room",
+      title: "Escape Room",
+    },
 
-  //   {
-  //     img: simchaImg,
-  //     alt: "Mekor Chaim Simcha",
-  //     caption: "Mekor Chaim Simcha",
-  //   },
-  //   {
-  //     img: melavehhMalkaImg,
-  //     alt: "Melaveh Malka",
-  //     caption: "Melaveh Malka",
-  //   },
-  //   {
-  //     img: morningSederImg,
-  //     alt: "Morning Seder",
-  //     caption: "Morning Seder",
-  //   },
-  //   {
-  //     img: purimcImg,
-  //     alt: "Purim Chagiga",
-  //     caption: "Purim Chagiga",
-  //   },
-  //   {
-  //     img: purimSeudaImg,
-  //     alt: "Purim Seuda",
-  //     caption: "Purim Seuda",
-  //   },
-  //   {
-  //     img: shabbatonImg,
-  //     alt: "Shabbaton",
-  //     caption: "Shabbaton",
-  //   },
-  //   {
-  //     img: softballImg,
-  //     alt: "Softball Game",
-  //     caption: "Softball Game",
-  //   },
-  //   {
-  //     img: zoomImg,
-  //     alt: "Zoom Seder",
-  //     caption: "Zoom Seder",
-  //   },
-  // ];
+    {
+      img: simchaImg,
+      alt: "Mekor Chaim Simcha",
+      title: "Mekor Chaim Simcha",
+    },
+    {
+      img: melavehhMalkaImg,
+      alt: "Melaveh Malka",
+      title: "Melaveh Malka",
+    },
+    {
+      img: morningSederImg,
+      alt: "Morning Seder",
+      title: "Morning Seder",
+    },
+    {
+      img: purimcImg,
+      alt: "Purim Chagiga",
+      title: "Purim Chagiga",
+    },
+    {
+      img: purimSeudaImg,
+      alt: "Purim Seuda",
+      title: "Purim Seuda",
+    },
+    {
+      img: shabbatonImg,
+      alt: "Shabbaton",
+      title: "Shabbaton",
+    },
+    {
+      img: softballImg,
+      alt: "Softball Game",
+      title: "Softball Game",
+    },
+    {
+      img: zoomImg,
+      alt: "Zoom Seder",
+      title: "Zoom Seder",
+    },
+  ];
 
   /*   */
 
@@ -121,9 +121,6 @@ const About = () => {
               connection to ‘his guys’ and provides them with a solid foundation
               to succeed in life as a Ben Torah in the workforce. */
 
-
-
-              
   return (
     <section id="about">
       <div className="about-header-container">
@@ -135,7 +132,8 @@ const About = () => {
             will fully service every aspect of life after yeshiva.
           </span>
         </h2>
-        <div className="vertical-line"></div>
+        <div className="vertical-line small-hidden"></div>
+        <div className="horizontal-line large-hidden"></div>
         <h2 className="about-header-text">
           <img
             src={torahImg}
@@ -147,6 +145,22 @@ const About = () => {
             continuing on the path of true bnei torah.
           </span>
         </h2>
+      </div>
+      <div className="activities-container">
+        <header>
+          <h3>Get To Know Mekor Chaim</h3>
+        </header>
+        {activities.map((activity, index) => (
+          <div className="about-activity-container" key={index}>
+            <img
+              className="about-activity"
+              src={activity.img}
+              alt={activity.alt}
+              title={activity.title}
+            ></img>
+            <div className="about-image-overlay">{activity.title}</div>
+          </div>
+        ))}
       </div>
     </section>
   );
