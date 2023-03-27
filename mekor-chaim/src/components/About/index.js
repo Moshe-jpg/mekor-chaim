@@ -1,116 +1,133 @@
 import React from "react";
-import learnImg from "../../assets/learn.png";
-import torahImg from "../../assets/torah-scroll.png";
-import bbqImg from "../../assets/bbq.webp";
-import bowlingImg from "../../assets/bowling.webp";
-import bkVaadImg from "../../assets/brooklyn-vaad.webp";
-import escapeImg from "../../assets/escape-room.webp";
-import fiveTcImg from "../../assets/five-towns-chabura.webp";
+import LazyLoad from "react-lazyload";
+// import learnImg from "../../assets/learn.png";
+// import torahImg from "../../assets/torah-scroll.png";
 import lsImg from "../../assets/learning-seder.webp";
+import fiveTcImg from "../../assets/five-towns-chabura.webp";
+import bkVaadImg from "../../assets/brooklyn-vaad.webp";
 import simchaImg from "../../assets/mekor-chaim-simcha.webp";
-import melavehhMalkaImg from "../../assets/melaveh-malka.webp";
-import morningSederImg from "../../assets/morning-seder.webp";
 import purimcImg from "../../assets/purim-chagiga.webp";
-import purimSeudaImg from "../../assets/purim-seuda.webp";
 import shabbatonImg from "../../assets/shabbaton.webp";
-import softballImg from "../../assets/softball-game.webp";
-import zoomImg from "../../assets/zoom-seder.webp";
+// import softballImg from "../../assets/softball-game.webp";
+// import zoomImg from "../../assets/zoom-seder.webp";
 // import founderImg from "../../assets/founder.webp";
+// import purimSeudaImg from "../../assets/purim-seuda.webp";
+// import melavehhMalkaImg from "../../assets/melaveh-malka.webp";
+// import morningSederImg from "../../assets/morning-seder.webp";
+// import bbqImg from "../../assets/bbq.webp";
+// import bowlingImg from "../../assets/bowling.webp";
+// import escapeImg from "../../assets/escape-room.webp";
+
+/*
+Mekor Chaim is a unique community designed for young men in their 20s who are career-oriented. One of the key features that sets Mekor Chaim apart from other programs is its relatable rebbeim. The program's rebbeim are experienced and knowledgeable, and they understand the challenges that young men face when transitioning from yeshiva to the working world. This allows them to provide guidance and support that is both practical and meaningful.
+
+Another benefit of Mekor Chaim is its like-minded community. Members of the community share a common goal of balancing their careers with their Torah values, and this creates a sense of camaraderie that is both supportive and motivating. With Chavrusos available 24/7, members can always find someone to learn with, no matter what time of day it is.
+
+Mekor Chaim offers a variety of social activities that foster a sense of camaraderie and provide members with opportunities to connect and unwind. These activities include baseball games, barbecues, and Shabbatons, among others. They provide a much-needed break from the demands of work and allow members to enjoy each other's company in a relaxed setting.
+
+The program's emphasis on social activities is an important aspect of the community. These activities enable members to build strong relationships with each other and provide a support network that is essential when navigating the challenges of the working world. They also help members develop a sense of community and connection that is vital to maintaining a healthy work-life balance.
+
+In addition to its programming, Mekor Chaim offers regular Hashkafa/Parsha Vaadim and Shiurim throughout the day. These sessions are designed to provide members with the Torah knowledge and spiritual guidance they need to navigate the challenges of the working world while staying true to their values.
+
+In summary, Mekor Chaim is a comprehensive program that offers a supportive community, experienced rebbeim, and a wide range of programming to help young men balance their careers with their Torah values. With features like Chavrusos available 24/7, traveling chaburos, and regular Hashkafa/Parsha Vaadim and Shiurim throughout the day, Mekor Chaim is an ideal community for those looking to stay true to their Torah values while pursuing their career goals.
+
+*/
 
 const About = () => {
-  const activities = [
-    {
-      img: bkVaadImg,
-      alt: "Brooklyn Vaad",
-      title: "Brooklyn Vaad",
-    },
-    {
-      img: bbqImg,
-      alt: "barbecue",
-      title: "BBQ",
-    },
-    {
-      img: fiveTcImg,
-      alt: "Five Towns Chaburah",
-      title: "Five Towns Chaburah",
-    },
-    {
-      img: bowlingImg,
-      alt: "Bowling",
-      title: "Bowling",
-    },
-    {
-      img: lsImg,
-      alt: "Learning Seder",
-      title: "Learning Seder",
-    },
-    {
-      img: escapeImg,
-      alt: "Escape Room",
-      title: "Escape Room",
-    },
+  const InfoBoxes = () => {
+    const activities = [
+      {
+        img: lsImg,
+        alt: "Learning Seder",
+        title: "Learning Seder",
+        infoText:
+          "Mekor Chaim is a unique community designed for young men in their 20s who are career-oriented. One of the key features that sets Mekor Chaim apart from other programs is its relatable rebbeim. The program's rebbeim are experienced and knowledgeable, and they understand the challenges that young men face when transitioning from yeshiva to the working world. The rebbeim provide guidance and support that is both practical and meaningful.",
+        headingNumber: "1",
+        textSide: "left",
+        id: 0,
+      },
+      {
+        img: fiveTcImg,
+        alt: "Five Towns Chaburah",
+        title: "Five Towns Chaburah",
+        infoText:
+          "Mekor Chaim is a like-minded community. Members of the community share a common goal of balancing their careers with their Torah values, and this creates a sense of camaraderie that is both supportive and motivating. With Chavrusos available 24/7, members can always find someone to learn with, no matter what time of day it is.",
+        headingNumber: "2",
+        textSide: "right",
+        id: 1,
+      },
+      {
+        img: bkVaadImg,
+        alt: "Brooklyn Vaad",
+        title: "Brooklyn Vaad",
+        infoText:
+          "Mekor Chaim offers a variety of social activities that foster a sense of camaraderie and provide members with opportunities to connect and unwind. These activities include baseball games, barbecues, and Shabbatons, among others. They provide a much-needed break from the demands of work and allow members to enjoy each other's company in a relaxed setting.",
+        headingNumber: "3",
+        textSide: "left",
+        id: 2,
+      },
 
-    {
-      img: simchaImg,
-      alt: "Mekor Chaim Simcha",
-      title: "Mekor Chaim Simcha",
-    },
-    {
-      img: melavehhMalkaImg,
-      alt: "Melaveh Malka",
-      title: "Melaveh Malka",
-    },
-    {
-      img: morningSederImg,
-      alt: "Morning Seder",
-      title: "Morning Seder",
-    },
-    {
-      img: purimcImg,
-      alt: "Purim Chagiga",
-      title: "Purim Chagiga",
-    },
-    {
-      img: purimSeudaImg,
-      alt: "Purim Seuda",
-      title: "Purim Seuda",
-    },
-    {
-      img: shabbatonImg,
-      alt: "Shabbaton",
-      title: "Shabbaton",
-    },
-    {
-      img: softballImg,
-      alt: "Softball Game",
-      title: "Softball Game",
-    },
-    {
-      img: zoomImg,
-      alt: "Zoom Seder",
-      title: "Zoom Seder",
-    },
-  ];
+      {
+        img: simchaImg,
+        alt: "Mekor Chaim Simcha",
+        title: "Mekor Chaim Simcha",
+        infoText:
+          "The program's emphasis on social activities is an important aspect of the community. These activities enable members to build strong relationships with each other and provide a support network that is essential when navigating the challenges of the working world. They also help members develop a sense of community and connection that is vital to maintaining a healthy work-life balance.",
+        headingNumber: "4",
+        textSide: "right",
+        id: 3,
+      },
+      {
+        img: purimcImg,
+        alt: "Purim Chagiga",
+        title: "Purim Chagiga",
+        infoText:
+          "In addition to its programming, Mekor Chaim offers regular Hashkafa/Parsha Vaadim and Shiurim throughout the day. These sessions are designed to provide members with the Torah knowledge and spiritual guidance they need to navigate the challenges of the working world while staying true to their values.",
+        headingNumber: "5",
+        textSide: "left",
+        id: 4,
+      },
+      {
+        img: shabbatonImg,
+        alt: "Shabbaton",
+        title: "Shabbaton",
+        infoText:
+          "In summary, Mekor Chaim is a comprehensive program that offers a supportive community, experienced rebbeim, and a wide range of programming to help young men balance their careers with their Torah values. With features like Chavrusos available 24/7, traveling chaburos, and regular Hashkafa/Parsha Vaadim and Shiurim throughout the day, Mekor Chaim is an ideal community for those looking to stay true to their Torah values while pursuing their career goals.",
+        headingNumber: "6",
+        textSide: "right",
+        id: 5,
+      },
+      // {
+      //   img: softballImg,
+      //   alt: "Softball Game",
+      //   title: "Softball Game",
+      //   infoText: "",
+      //   headingNumber: "",
+      //   textSide: "",
+      // },
+    ];
 
-  /*   */
-
-  /* <span>What We Offer</span> */
-
-  /* <span className="offers-item">Relatable Rebbeim</span>✔ */
-
-  /* <span className="offers-item">​Like-Minded Community</span>✔​ */
-
-  /* <span className="offers-item">Zoom Shiurim</span>✔ */
-
-  /* <span className="offers-item">Chavrusos 24/7</span>✔ */
-
-  /* <span className="offers-item">Traveling Chaburos</span>✔ */
-
-  /* <span className="offers-item">Hashkafa/Parsha Vaadim</span>✔ */
-
-  /* <span className="offers-item">Shiurim Throughout The Day</span>✔ */
-
-  /* <span className="blue">Rabbi Dov Blumberg</span> */
+    return activities.map((activity) => (
+      <>
+        <div className={`${activity.textSide} info-box`} key={activities.id}>
+          <h3 className={"info-text"}>
+            <span>{activity.headingNumber}</span>
+            {activity.infoText}
+          </h3>
+          <div className="vertical-line small-hidden"></div>
+          <LazyLoad height={200} offset={400}>
+            <img
+              className="info-img"
+              src={activity.img}
+              alt={activity.alt}
+              title={activity.title}
+            ></img>
+          </LazyLoad>
+        </div>
+        <div className="horizontal-line large-hidden"></div>
+      </>
+    ));
+  };
 
   /* Under the tutelage of its Rosh HaYeshiva, HaRav Shaya Cohen,
               Shlit”a, Rabbi Blumberg spent over a decade learning and carefully
@@ -125,42 +142,23 @@ const About = () => {
     <section id="about">
       <div className="about-header-container">
         <h2 className="about-header-text">
-          <img src={learnImg} alt="community for learning"></img>
-          <span>
-            Mekor Chaim is a community for young men in their 20’s with
-            career-oriented schedules. Our multitude of offerings & programming
-            will fully service every aspect of life after yeshiva.
-          </span>
-        </h2>
-        <div className="vertical-line small-hidden"></div>
-        <div className="horizontal-line large-hidden"></div>
-        <h2 className="about-header-text">
-          <img
-            src={torahImg}
-            alt="career oriented, focused on learning Torah"
-          ></img>
-          <span>
-            We provide the balance necessary for our talmidim, no matter their
-            schedule or location, to stay fully focused on their careers while
-            continuing on the path of true bnei torah.
-          </span>
+          What Is&nbsp;<span>Mekor Chaim</span>?
         </h2>
       </div>
-      <div className="activities-container">
-        <header>
-          <h3>Get To Know Mekor Chaim</h3>
-        </header>
-        {activities.map((activity, index) => (
-          <div className="about-activity-container" key={index}>
-            <img
-              className="about-activity"
-              src={activity.img}
-              alt={activity.alt}
-              title={activity.title}
-            ></img>
-            <div className="about-image-overlay">{activity.title}</div>
-          </div>
-        ))}
+      <div className="info-container">
+        <InfoBoxes />
+        {/* <div className="info-box">
+          <h3 className="info-text">
+            <span>{activities[0].headingNumber}</span>
+            {activities[0].infoText}
+          </h3>
+          <img
+            className="info-img"
+            src={activities[0].img}
+            alt={activities[0].alt}
+            title={activities[0].title}
+          ></img>
+        </div> */}
       </div>
     </section>
   );
