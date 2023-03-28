@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/mekor-chaim/static/css/main.7ab7239a.css",
-    "main.js": "/mekor-chaim/static/js/main.3a4f104b.js",
+    "main.css": "/mekor-chaim/static/css/main.528e52cd.css",
+    "main.js": "/mekor-chaim/static/js/main.8210792c.js",
     "static/js/787.0a1ad305.chunk.js": "/mekor-chaim/static/js/787.0a1ad305.chunk.js",
     "static/media/bm-full.webp": "/mekor-chaim/static/media/bm-full.878b2fe88611a07fe4b4.webp",
+    "static/media/founder.webp": "/mekor-chaim/static/media/founder.f2e6a40e5ef79776c820.webp",
     "static/media/morning-seder.webp": "/mekor-chaim/static/media/morning-seder.0623c3b57ce381bc14cf.webp",
     "static/media/brooklyn-vaad.webp": "/mekor-chaim/static/media/brooklyn-vaad.0f89a44cd94b03c77699.webp",
     "static/media/five-towns-chabura.webp": "/mekor-chaim/static/media/five-towns-chabura.cd06be0fcbe37004f3fb.webp",
@@ -13,12 +14,12 @@
     "static/media/learning-seder.webp": "/mekor-chaim/static/media/learning-seder.d47d231494b80db2cbec.webp",
     "static/media/mekor-chaim-logo.webp": "/mekor-chaim/static/media/mekor-chaim-logo.c999b9bf9e3d967d7426.webp",
     "index.html": "/mekor-chaim/index.html",
-    "main.7ab7239a.css.map": "/mekor-chaim/static/css/main.7ab7239a.css.map",
-    "main.3a4f104b.js.map": "/mekor-chaim/static/js/main.3a4f104b.js.map",
+    "main.528e52cd.css.map": "/mekor-chaim/static/css/main.528e52cd.css.map",
+    "main.8210792c.js.map": "/mekor-chaim/static/js/main.8210792c.js.map",
     "787.0a1ad305.chunk.js.map": "/mekor-chaim/static/js/787.0a1ad305.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ab7239a.css",
-    "static/js/main.3a4f104b.js"
+    "static/css/main.528e52cd.css",
+    "static/js/main.8210792c.js"
   ]
 }
