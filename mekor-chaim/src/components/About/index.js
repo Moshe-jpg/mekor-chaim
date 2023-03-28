@@ -10,7 +10,7 @@ import purimcImg from "../../assets/purim-chagiga.webp";
 import shabbatonImg from "../../assets/shabbaton.webp";
 // import softballImg from "../../assets/softball-game.webp";
 // import zoomImg from "../../assets/zoom-seder.webp";
-// import founderImg from "../../assets/founder.webp";
+import founderImg from "../../assets/founder.webp";
 // import purimSeudaImg from "../../assets/purim-seuda.webp";
 // import melavehhMalkaImg from "../../assets/melaveh-malka.webp";
 // import morningSederImg from "../../assets/morning-seder.webp";
@@ -45,16 +45,18 @@ const About = () => {
         headingNumber: "1",
         textSide: "left",
         id: 0,
+        infoLast: "",
       },
       {
         img: fiveTcImg,
         alt: "Five Towns Chaburah",
         title: "Five Towns Chaburah",
         infoText:
-          "Mekor Chaim is a like-minded community. Members of the community share a common goal of balancing their careers with their Torah values, and this creates a sense of camaraderie that is both supportive and motivating. With Chavrusos available 24/7, members can always find someone to learn with, no matter what time of day it is.",
+          "Mekor Chaim is a like-minded community. Members of the community share a common goal of balancing their careers with their Torah values, and this creates a sense of camaraderie that is both supportive and motivating. With Chavrusos available 24/7, members can always find someone to learn with, no matter what time of day it is. Mekor Chaim is a vibrant and dynamic community that provides a supportive environment for those seeking to live a balanced and fulfilling life.",
         headingNumber: "2",
         textSide: "right",
         id: 1,
+        infoLast: "",
       },
       {
         img: bkVaadImg,
@@ -65,6 +67,7 @@ const About = () => {
         headingNumber: "3",
         textSide: "left",
         id: 2,
+        infoLast: "",
       },
 
       {
@@ -76,16 +79,18 @@ const About = () => {
         headingNumber: "4",
         textSide: "right",
         id: 3,
+        infoLast: "",
       },
       {
         img: purimcImg,
         alt: "Purim Chagiga",
         title: "Purim Chagiga",
         infoText:
-          "In addition to its programming, Mekor Chaim offers regular Hashkafa/Parsha Vaadim and Shiurim throughout the day. These sessions are designed to provide members with the Torah knowledge and spiritual guidance they need to navigate the challenges of the working world while staying true to their values.",
+          "In addition to its programming, Mekor Chaim offers regular Hashkafa/Parsha Vaadim and Shiurim throughout the day. These sessions are designed to provide members with the Torah knowledge and spiritual guidance they need to navigate the challenges of the working world while staying true to their values. This is the true definition of being Kovea Itim, and allows guys the opportunity to be consistent in their learning.",
         headingNumber: "5",
         textSide: "left",
         id: 4,
+        infoLast: "",
       },
       {
         img: shabbatonImg,
@@ -96,6 +101,7 @@ const About = () => {
         headingNumber: "6",
         textSide: "right",
         id: 5,
+        infoLast: "info-box-last",
       },
       // {
       //   img: softballImg,
@@ -108,12 +114,10 @@ const About = () => {
     ];
 
     return activities.map((activity) => (
-      <>
-        <div className={`${activity.textSide} info-box`} key={activities.id}>
-          <h3 className={"info-text"}>
-            <span>{activity.headingNumber}</span>
-            {activity.infoText}
-          </h3>
+      <React.Fragment key={activity.id}>
+        <div className={`${activity.textSide} info-box ${activity.infoLast}`}>
+          <span>{activity.headingNumber}.</span>
+          <h3 className={"info-text"}>{activity.infoText}</h3>
           <div className="vertical-line small-hidden"></div>
           <LazyLoad height={200} offset={400}>
             <img
@@ -125,7 +129,7 @@ const About = () => {
           </LazyLoad>
         </div>
         <div className="horizontal-line large-hidden"></div>
-      </>
+      </React.Fragment>
     ));
   };
 
@@ -141,24 +145,35 @@ const About = () => {
   return (
     <section id="about">
       <div className="about-header-container">
-        <h2 className="about-header-text">
+        <h2 className="about-header">
           What Is&nbsp;<span>Mekor Chaim</span>?
         </h2>
       </div>
       <div className="info-container">
         <InfoBoxes />
-        {/* <div className="info-box">
-          <h3 className="info-text">
-            <span>{activities[0].headingNumber}</span>
-            {activities[0].infoText}
-          </h3>
-          <img
-            className="info-img"
-            src={activities[0].img}
-            alt={activities[0].alt}
-            title={activities[0].title}
-          ></img>
-        </div> */}
+      </div>
+      <div className="founder-container">
+        <h2 className="about-header about-header-last">
+          Who Runs&nbsp;<span>Mekor Chaim</span>?
+        </h2>
+        <div className="founder-info">
+          <div className="founder-img-container">
+            <img src={founderImg} alt="Rabbi Blumberg"></img>
+            <h4 className="founder-name">Rabbi Dov Blumberg</h4>
+          </div>
+          <div className="vertical-line small-hidden"></div>
+          <div className="horizontal-line large-hidden"></div>
+          <p className="founder-text">
+            Under the tutelage of its Rosh HaYeshiva, HaRav Shaya Cohen,
+            Shlit”a, Rabbi Blumberg spent over a decade learning and carefully
+            absorbing the hashkafa of his Rebbeim in Yeshiva Zichon Aryeh.
+            Towards the end of his years in Beis Medrash, he participated in Rav
+            Cohen’s comprehensive teacher-training course. In 2018, Rabbi
+            Blumberg founded Mekor Chaim. Rabbi Blumberg has a strong connection
+            to ‘his guys’ and provides them with a solid foundation to succeed
+            in life as a Ben Torah in the workforce.
+          </p>
+        </div>
       </div>
     </section>
   );
