@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 
 nav {
   width: 100%;
-  min-height: 15vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +120,7 @@ nav .nav-active {
 }
 
 .landing-header {
-  font-family: var(---header-font);
+  font-family: var(--header-font);
   font-size: 77px;
   letter-spacing: 1px;
   color: var(--off-orange);
@@ -160,14 +160,18 @@ nav .nav-active {
   border-radius: 5px;
   font-family: var(--main-font);
   font-size: 68px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 20px;
+  margin: 40vh 0;
 }
 
 #about .about-header span {
   color: var(--off-orange);
+  font-family: var(--header-font);
+  font-size: 88px;
 }
 
 #about .info-container {
@@ -226,7 +230,7 @@ nav .nav-active {
   position: absolute;
   top: -125px;
   font-size: 100px;
-  font-family: var(---header-font);
+  font-family: var(--header-font);
   color: var(--off-orange);
 }
 
@@ -235,7 +239,7 @@ nav .nav-active {
   color: var(--black);
 }
 
-#about .founder-container {
+#about .founder-container, #about .location-container {
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
@@ -411,7 +415,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 100px 0;
+    margin: 0;
   }
 
   #about .info-box:first-child {
@@ -472,6 +476,11 @@ input {
 
   #about .about-header-last {
     padding: 20px 0 100px;
+    font-size: 32px;
+    white-space: nowrap;
+  }
+
+  #about .about-header-last span {
     font-size: 48px;
   }
 
@@ -482,6 +491,10 @@ input {
 
    #about .founder-img-container {
     min-height: 15vh;
+   }
+
+   #about .founder-img-container img {
+    width: 95px;
    }
 
    #about .horizontal-line {
@@ -531,10 +544,10 @@ input {
 
   nav ul {
     position: fixed;
-    top: 15vh;
+    top: 10vh;
     right: 0;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     flex-direction: column;
     transform: translateX(100%);
     background-color: var(--black);
@@ -550,7 +563,7 @@ input {
   /* landing page section */
 
   #landing-page {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   .landing-container {
@@ -570,11 +583,18 @@ input {
   }
 
   #about .about-header {
-    font-size: 28px;
+    font-size: 18px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1;
   }
 
   #about .about-header span {
     font-size: 32px;
+  }
+
+  #about .founder-text {
+    font-size: 16px;
   }
 
   /*  */

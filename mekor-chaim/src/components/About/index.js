@@ -168,12 +168,19 @@ const About = () => {
             Shlit”a, Rabbi Blumberg spent over a decade learning and carefully
             absorbing the hashkafa of his Rebbeim in Yeshiva Zichon Aryeh.
             Towards the end of his years in Beis Medrash, he participated in Rav
-            Cohen’s comprehensive teacher-training course. In 2018, Rabbi
-            Blumberg founded Mekor Chaim. Rabbi Blumberg has a strong connection
-            to ‘his guys’ and provides them with a solid foundation to succeed
-            in life as a Ben Torah in the workforce.
+            Cohen’s comprehensive teacher-training course.
+            <br className="large-hidden"></br>
+            <br className="large-hidden"></br>In 2018, Rabbi Blumberg founded
+            Mekor Chaim. Rabbi Blumberg has a strong connection to ‘his guys’
+            and provides them with a solid foundation to succeed in life as a
+            Ben Torah in the workforce.
           </p>
         </div>
+      </div>
+      <div className="location-container">
+        <h2 className="about-header about-header-last">
+          Where Are We Located?
+        </h2>
       </div>
     </section>
   );
