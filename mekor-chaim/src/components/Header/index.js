@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <nav>
+    <>
       <a className="nav-logo-container" href="/">
         <img src={mcLogo} className="nav-logo" alt="Mekor Chaim Logo"></img>
       </a>
@@ -57,7 +57,7 @@ const Header = () => {
           className={original}
         ></img>
       </div>
-    </nav>
+    </>
   );
 };
 
