@@ -137,7 +137,7 @@ nav .nav-active {
 
 #about {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -363,18 +363,48 @@ nav .nav-active {
 }
 
 /* Footer section */
-footer {
+
+.footer {
+  min-height: 45vh;
+  padding: 50px 0;
   width: 100%;
-  
-  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
-footer img {
+.footer .contact-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.footer .contact-links li {
+  margin: 0 15px;
+}
+
+.footer img {
   width: 55px;
+}
+
+.footer h6 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer h6 a {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: var(--header-font);
+  color: var(--off-red);
+  transition: 0.5s ease-in-out;
+}
+
+.footer h6:hover a {
+  font-size: 38px;
 }
 
 .horizontal-line {

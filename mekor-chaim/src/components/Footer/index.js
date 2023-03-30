@@ -6,7 +6,7 @@ import spotifyLogo from "../../assets/spotify.png";
 
 const Footer = () => {
   return (
-    <>
+    <footer className="footer">
       <ul className="contact-links">
         <li id="gmail">
           <a href="mailto:dblumberg@mekorchaim.com">
@@ -29,11 +29,12 @@ const Footer = () => {
           </a>
         </li>
       </ul>
+      <div className="horizontal-line"></div>
       <h6>
         Site Created By&nbsp;
-        <a href="https://moshe-jpg.github.io/react-portfolio/">Moshe Gadol</a>
+        <a href="https://ca.linkedin.com/in/moshe-gadol">Moshe Gadol</a>
       </h6>
-    </>
+    </footer>
   );
 };
 
