@@ -126,11 +126,13 @@ nav .nav-active {
   font-size: 77px;
   letter-spacing: 1px;
   color: var(--off-orange);
+  overflow: hidden;
 }
 
 .landing-text {
   font-family: var(--header-font);
   font-size: 35px;
+  overflow: hidden;
 }
 
 /* about section  */
@@ -143,7 +145,7 @@ nav .nav-active {
 
 #about .about-header-container {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   background: url("./assets/bm-full.webp");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
@@ -168,6 +170,8 @@ nav .nav-active {
   text-align: center;
   padding: 20px;
   margin: 40vh 0;
+  visibility: hidden;
+  transform: translateY(100%);
 }
 
 #about .about-header span {
@@ -208,6 +212,18 @@ nav .nav-active {
   flex-direction: row-reverse;
 }
 
+#about .left .info-text {
+  flex-direction: row;
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+#about .right .info-text {
+  flex-direction: row-reverse;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
 #about .lazyload-wrapper {
   width: 40%;
 }
@@ -217,6 +233,16 @@ nav .nav-active {
   border-radius: 5px;
 }
 
+#about .left .lazyload-wrapper {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+#about .right .lazyload-wrapper {
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+
 #about .info-text {
   width: 50%;
   padding: 20px;
@@ -224,7 +250,7 @@ nav .nav-active {
   color: var(--black);
   font-family: var(--main-font);
   position: relative;
-  text-align: center;
+  text-align: left;
   line-height: 2;
 }
 
@@ -234,6 +260,16 @@ nav .nav-active {
   font-size: 100px;
   font-family: var(--header-font);
   color: var(--off-orange);
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
+#about .info-text .info-text-header {
+  all: unset;
+  position: absolute;
+  top: -35px;
+  color: var(--off-orange);
+  font-size: 32px;
 }
 
 #about .about-header-last {
@@ -275,6 +311,10 @@ nav .nav-active {
 
 #about .founder-img-container img {
   width: 150px;
+}
+
+#about .text-reveal {
+  overflow: hidden;
 }
 
 #about .founder-name {
@@ -386,8 +426,13 @@ nav .nav-active {
   margin: 0 15px;
 }
 
-.footer img {
+.footer .contact-links li img {
   width: 55px;
+  transition: 0.5s ease-in-out;
+}
+
+.footer .contact-links li img:hover {
+  transform: translateY(-10px);
 }
 
 .footer h6 {
@@ -405,17 +450,28 @@ nav .nav-active {
 
 .footer h6:hover a {
   font-size: 38px;
+  color: var(--off-orange);
 }
 
 .horizontal-line {
-  width: 95%;
+  visibility: hidden;
+  width: 0;
   height: 1px;
   background: var(--off-orange);
   margin: 50px auto;
 }
 
 .vertical-line {
-  height: 75vh;
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  background: var(--off-orange);
+  /* margin: 50px auto; */
+}
+
+.vertical-line-last {
+  visibility: hidden;
+  height: 1px;
   width: 1px;
   background: var(--off-orange);
   /* margin: 50px auto; */

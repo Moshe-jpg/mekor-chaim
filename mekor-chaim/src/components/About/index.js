@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import aboutAnim from "../../helpers/aboutAnim";
 import LazyLoad from "react-lazyload";
 // import learnImg from "../../assets/learn.png";
 // import torahImg from "../../assets/torah-scroll.png";
@@ -20,6 +21,12 @@ import mapLogo from "../../assets/google-maps.png";
 // import escapeImg from "../../assets/escape-room.webp";
 
 const About = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    aboutAnim(aboutRef.current);
+  }, []);
+
   const InfoBoxes = () => {
     const activities = [
       {
@@ -30,6 +37,7 @@ const About = () => {
           "Mekor Chaim is a unique community designed for young men in their 20s who are career-oriented. One of the key features that sets Mekor Chaim apart from other programs is its relatable rebbeim. The program's rebbeim are experienced and knowledgeable, and they understand the challenges that young men face when transitioning from yeshiva to the working world. The rebbeim provide guidance and support that is both practical and meaningful.",
         headingNumber: "1",
         textSide: "left",
+        textHeader: "Community",
         id: 0,
         infoLast: "",
       },
@@ -41,6 +49,7 @@ const About = () => {
           "Mekor Chaim is a like-minded community. Members of the community share a common goal of balancing their careers with their Torah values, and this creates a sense of camaraderie that is both supportive and motivating. With Chavrusos available 24/7, members can always find someone to learn with, no matter what time of day it is. Mekor Chaim is a vibrant and dynamic community that provides a supportive environment for those seeking to live a balanced and fulfilling life.",
         headingNumber: "2",
         textSide: "right",
+        textHeader: "Torah Values",
         id: 1,
         infoLast: "",
       },
@@ -52,6 +61,7 @@ const About = () => {
           "Mekor Chaim offers a variety of social activities that foster a sense of camaraderie and provide members with opportunities to connect and unwind. These activities include baseball games, barbecues, and Shabbatons, among others. They provide a much-needed break from the demands of work and allow members to enjoy each other's company in a relaxed setting.",
         headingNumber: "3",
         textSide: "left",
+        textHeader: "Socialize",
         id: 2,
         infoLast: "",
       },
@@ -64,6 +74,7 @@ const About = () => {
           "The program's emphasis on social activities is an important aspect of the community. These activities enable members to build strong relationships with each other and provide a support network that is essential when navigating the challenges of the working world. They also help members develop a sense of community and connection that is vital to maintaining a healthy work-life balance.",
         headingNumber: "4",
         textSide: "right",
+        textHeader: "Support",
         id: 3,
         infoLast: "",
       },
@@ -75,6 +86,7 @@ const About = () => {
           "In addition to its programming, Mekor Chaim offers regular Hashkafa/Parsha Vaadim and Shiurim throughout the day. These sessions are designed to provide members with the Torah knowledge and spiritual guidance they need to navigate the challenges of the working world while staying true to their values. This is the true definition of being Kovea Itim, and allows guys the opportunity to be consistent in their learning.",
         headingNumber: "5",
         textSide: "left",
+        textHeader: "Guidance",
         id: 4,
         infoLast: "",
       },
@@ -83,9 +95,10 @@ const About = () => {
         alt: "Shabbaton",
         title: "Shabbaton",
         infoText:
-          "In summary, Mekor Chaim is a comprehensive program that offers a supportive community, experienced rebbeim, and a wide range of programming to help young men balance their careers with their Torah values. With features like Chavrusos available 24/7, traveling chaburos, and regular Hashkafa/Parsha Vaadim and Shiurim throughout the day, Mekor Chaim is an ideal community for those looking to stay true to their Torah values while pursuing their career goals.",
+          "In summary, Mekor Chaim is a comprehensive program that offers a supportive community, experienced rebbeim, and a wide range of programming to help young men balance their careers with their Torah values. With Chavrusos always available, traveling chaburos, and regular Hashkafa/Parsha Vaadim and Shiurim throughout the day, Mekor Chaim is an ideal community for those looking to stay true to their Torah values while pursuing their career goals.",
         headingNumber: "6",
         textSide: "right",
+        textHeader: "Balance",
         id: 5,
         infoLast: "info-box-last",
       },
@@ -95,7 +108,7 @@ const About = () => {
       <React.Fragment key={activity.id}>
         <div className={`${activity.textSide} info-box ${activity.infoLast}`}>
           <span>{activity.headingNumber}.</span>
-          <h3 className={"info-text"}>{activity.infoText}</h3>
+          <h3 className={"info-text"}><span className="info-text-header">{activity.textHeader}</span>{activity.infoText}</h3>
           <div className="vertical-line small-hidden"></div>
           <LazyLoad height={200} offset={400}>
             <img
@@ -112,7 +125,7 @@ const About = () => {
   };
 
   return (
-    <section id="about">
+    <section id="about" ref={aboutRef}>
       <div className="about-header-container">
         <h2 className="about-header">
           What Is&nbsp;<span>Mekor Chaim</span>?
@@ -128,9 +141,9 @@ const About = () => {
         <div className="founder-info">
           <div className="founder-img-container">
             <img src={founderImg} alt="Rabbi Blumberg"></img>
-            <h4 className="founder-name">Rabbi Dov Blumberg</h4>
+            <h4 className="founder-name text-reveal">Rabbi Dov Blumberg</h4>
           </div>
-          <div className="vertical-line small-hidden"></div>
+          <div className="vertical-line-last small-hidden"></div>
           <div className="horizontal-line large-hidden"></div>
           <p className="founder-text">
             Under the tutelage of its Rosh HaYeshiva, HaRav Shaya Cohen,
@@ -152,7 +165,7 @@ const About = () => {
         </h2>
         <ul className="locations">
           <li>
-            <h4>Brooklyn</h4>
+            <h4 className="text-reveal">Brooklyn</h4>
             <div className="horizontal-line"></div>
             <a href="https://goo.gl/maps/2jA22C9UDbMrtDeR8">
               <i>1912 New York Ave.</i>
@@ -164,7 +177,7 @@ const About = () => {
             </a>
           </li>
           <li>
-            <h4>Cedarhurst</h4>
+            <h4 className="text-reveal">Cedarhurst</h4>
             <div className="horizontal-line"></div>
             <a href="https://goo.gl/maps/FENmfRaTYEhBGrqG8">
               <i>545 Arbuckle Ave.</i>
@@ -176,7 +189,7 @@ const About = () => {
             </a>
           </li>
           <li>
-            <h4>Queens</h4>
+            <h4 className="text-reveal">Queens</h4>
             <div className="horizontal-line"></div>
             <a href="https://goo.gl/maps/SK2z2MVHB7ekp6J29">
               <i>141-56 73rd Ave.</i>
